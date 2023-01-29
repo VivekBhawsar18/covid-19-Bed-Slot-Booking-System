@@ -1,0 +1,44 @@
+{% extends 'adminbase.html' %}
+{% block title %} Hospital User {% endblock title %}
+{% block form %}
+
+{% block navbar %}
+<li><a class="nav-link scrollto active" href="{{ url_for('admin.admin_logout') }}">LOGOUT</a></li>
+
+{% endblock navbar %}
+
+<section class="container1 forms">
+    <div class="form login">
+        <div class="form-content">
+            {% include "message.html" %}
+            <header>Add Hosptal User</header>
+            <form action="/addHosptalUser" method="post" id="sipfrm">
+                <div class="field input-field">
+                    <input type="text" placeholder="Enter Hospital Code" class="input" name="hcode" required>
+                </div>
+
+                <div class="field input-field">
+                    <input type="email" placeholder="Enter Email" class="input" name="email" required>
+                </div>
+
+
+                <div class="field input-field">
+                    <input type="password" placeholder="Enter Password" class="password" name="password" required>
+                    <i class='bx bx-hide eye-icon'></i>
+                </div>
+                <!-- 
+                <div class="field input-field">
+                    <input type="password" placeholder="Confirm password" class="password">
+                    <i class='bx bx-hide eye-icon'></i>
+                </div> -->
+
+                <div class="field button-field">
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+
+        </div>
+        <script src="static/assets/js/v-main.js"></script>
+
+
+        {% endblock form %}
