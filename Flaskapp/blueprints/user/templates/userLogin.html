@@ -1,0 +1,54 @@
+{% extends 'userBase.html' %}
+{% block title %} User Login{% endblock title %}
+
+{% block navbar %}
+<li><a class="nav-link scrollto active" href="/">HOME</a></li>
+
+{% endblock navbar %}
+
+{% block dropdown %}
+<li class="dropdown"><a href="{{ url_for('home.index') }}"><span>LOGIN</span> <i class="bi bi-chevron-down"></i></a>
+    <ul>
+        <li><a href="{{ url_for('user.user_login') }}">User Login</a></li>
+        <li><a href="{{ url_for('hospital.hospital_login') }}">Hospital Login</a></li>
+        <li><a href="{{ url_for( 'admin.admin_login' ) }}">Admin Login</a></li>
+    </ul>
+</li>
+{% endblock dropdown %}
+
+
+{% block form %}
+
+<section class="container1 forms">
+    <div class="form login">
+        <div class="form-content">
+            <header>Login</header>
+            <form action="/login" method="post" id="logFrm">
+                {% include "message.html" %}
+                <div class="field input-field">
+                    <input type="text" placeholder="Enter SRF ID" class="input" name="srf" minlength="10" maxlength="10"
+                        required>
+                </div>
+
+                <div class="field input-field">
+                    <input type="date" placeholder="Enter DOB" class="password" name="dob" required>
+                    <!-- <i class='bx bx-hide eye-icon'></i> -->
+                </div>
+
+                <!-- <div class="form-link">
+                    <a href="#" class="forgot-pass">Forgot password?</a>
+                </div> -->
+
+                <div class="field button-field">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+
+            <div class="form-link">
+                <span>Don't have an account? <a href="{{ url_for('user.user_signup') }}"
+                        class="link signup-link">Signup</a></span>
+            </div>
+        </div>
+        <!-- <script src="static/assets/js/v-main.js"></script> -->
+
+        {% endblock form %}

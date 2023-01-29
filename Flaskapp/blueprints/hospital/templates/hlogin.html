@@ -1,0 +1,43 @@
+{% extends 'hbase.html' %}
+{% block title %} Hospital Login{% endblock title %}
+
+{% block navbar %}
+<li><a class="nav-link scrollto active" href="/">HOME</a></li>
+{% endblock navbar %}
+
+{% block dropdown %}
+<li class="dropdown"><a href="{{ url_for('home.index') }}"><span>LOGIN</span> <i class="bi bi-chevron-down"></i></a>
+    <ul>
+        <li><a href="{{ url_for('user.user_login') }}">User Login</a></li>
+        <li><a href="{{ url_for('hospital.hospital_login') }}">Hospital Login</a></li>
+        <li><a href="{{ url_for( 'admin.admin_login' ) }}">Admin Login</a></li>
+    </ul>
+</li>
+{% endblock dropdown %}
+
+{% block form %}
+
+<section class="container1 forms">
+    <div class="form login">
+        <div class="form-content">
+            <header>Hospital Login</header>
+            <form action="/hospitallogin" method="post" id="logFrm">
+                {% include "message.html" %}
+                <div class="field input-field">
+                    <input type="email" placeholder="Enter Email" class="input" name="email" required>
+                </div>
+
+                <div class="field input-field">
+                    <input type="password" placeholder="Enter Password" class="password" name="password" required>
+                    <i class='bx bx-hide eye-icon'></i>
+                </div>
+
+                <div class="field button-field">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+
+        </div>
+        <script src="static/assets/js/v-main.js"></script>
+
+        {% endblock form %}
