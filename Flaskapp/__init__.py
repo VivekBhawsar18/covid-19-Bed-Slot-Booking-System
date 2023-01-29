@@ -10,6 +10,10 @@ app.config.from_object(Config)
 # Initialize Flask extensions here
 db.init_app(app)
 
+@app.route('/')
+def index():
+    return "<h1>Home</h1>"
+
 # Register blueprints here
 from Flaskapp.test.views import bp as Test_bp
 app.register_blueprint(Test_bp ,url_prefix ='/test')
