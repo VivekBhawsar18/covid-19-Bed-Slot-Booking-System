@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+Home Covid Slot Booking
+{% endblock title %}
+
+{% block body %}
+
+{% include "message.html" %}
+
+{% endblock body %}
+
+{% block navbar %}
+<li><a class="nav-link scrollto active" href="/">HOME</a></li>
+{% endblock navbar %}
+
+{% block dropdown %}
+<li class="dropdown"><a href="/login"><span>LOGIN</span> <i class="bi bi-chevron-down"></i></a>
+    <ul>
+        <li><a href="/login">User Login</a></li>
+        <li><a href="/hospitallogin">Hospital Login</a></li>
+        <li><a href="{{ url_for( 'admin.index'  }}">Admin Login</a></li>
+    </ul>
+</li>
+{% endblock dropdown %}

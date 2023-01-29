@@ -1,0 +1,12 @@
+<span class="title">
+    <h1> Fetch Data </h1>
+</span>
+<div class="questions">
+    <h2>Fetched data from db</h2>
+    <div class="container">
+        {% for name in names %}
+        <h1>{{name.fname}}</h1>
+        <h1>{{name.lname}}</h1>
+        {% endfor %}
+    </div>
+</div>
