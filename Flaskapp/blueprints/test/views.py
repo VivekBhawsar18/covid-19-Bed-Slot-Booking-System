@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 from Flaskapp.models.test import Test
 
-bp = Blueprint('test' , __name__ )
+bp = Blueprint('test' , __name__ , template_folder='templates')
 
 @bp.route('/')
 def index():
@@ -15,4 +15,7 @@ def db_con():
 
     except Exception as e:
         return str(e)
+
+
+
 
