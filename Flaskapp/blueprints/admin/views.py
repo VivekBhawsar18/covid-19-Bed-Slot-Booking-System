@@ -1,7 +1,10 @@
 from flask import Blueprint, flash , render_template , request , redirect , url_for , session
 import os
+from flask_bcrypt import Bcrypt
+
 
 bp = Blueprint('admin' , __name__ , static_folder='static' , template_folder='templates')
+
 
 @bp.route('/login')
 def admin_login():
@@ -15,7 +18,7 @@ def admin_home():
 
         name = os.environ.get('ADMIN_NAME')
         pwd  = os.environ.get('ADMIN_PASS')
-
+            
         if ( username==name and password==pwd ):
             session['user'] = name
             flash("login success","info")
@@ -27,7 +30,39 @@ def admin_home():
 
     return redirect(url_for('admin.admin_login'))
 
-@bp.route("/logoutAdmin")
+@bp.route("/add/user", methods=['POST' , 'GET'])
+def hos_user():
+
+        if request.method=='POST':
+            hcode=request.form.get('hcode')
+            email=request.form.get('email')
+            password=request.form.get('password')
+
+            encpassword=Bcrypt.generate_password_hash(password)
+            hcode=hcode.upper() 
+            
+            emailUser=Hospitaluser.query.filter_by(email=email).first()
+            hcodeUser = Hospitaluser.query.filter_by(hcode=hcode).first()
+
+            # if  emailUser or hcodeuser:
+            if  emailUser:
+                flash("Email is already taken","warning")
+                return render_template("addHosUser.html")
+
+            elif hcodeUser :
+                flash("Hcode is already taken","warning")
+                return render_template("addHosUser.html")       
+
+            # this is method  to save data in db
+            newhuser=Hospitaluser(hcode=hcode,email=email,password=encpassword)
+            db.session.add(newhuser)
+            db.session.commit()
+
+        else:
+            flash("Login and try Again","warning")
+            return render_template("addHosUser.html")
+
+@bp.route("/logout")
 def admin_logout():
     
     session.pop('user')
