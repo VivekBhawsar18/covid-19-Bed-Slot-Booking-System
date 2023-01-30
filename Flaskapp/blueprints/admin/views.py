@@ -20,12 +20,10 @@ def admin_home():
             session['user'] = name
             flash("login success","info")
             return render_template('adminHome.html')
-            return "Login succes"
 
         else:
             flash("Invalid Credentials","danger")
             return redirect(url_for('admin.admin_login'))
-            return "Login failed"
 
     return redirect(url_for('admin.admin_login'))
 
