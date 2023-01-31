@@ -1,18 +1,21 @@
 from flask import Flask, session
-from config import Config
-from Flaskapp.extensions import db
-from datetime import timedelta
+from config import Config 
+from config import MailConfig 
+from Flaskapp.extensions import db , bcrypt , mail
 
 app = Flask(__name__)
 
 # App configuration
 app.config.from_object(Config)
+app.config.from_object(MailConfig)
 
 # Initialize Flask extensions here
 db.init_app(app)
+bcrypt.init_app(app)
+mail.init_app(app)
+
 
 # Register blueprints here
-
 from Flaskapp.blueprints.home.views import bp as Home_bp
 app.register_blueprint(Home_bp)
 

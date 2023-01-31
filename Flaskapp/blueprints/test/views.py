@@ -1,7 +1,12 @@
 from flask import Blueprint, render_template
 from Flaskapp.models.test import Test
+from flask_mail import  Message
+from Flaskapp.extensions import mail
+from config import AdminCred
 
 bp = Blueprint('test' , __name__ , template_folder='templates')
+
+var = AdminCred()
 
 @bp.route('/')
 def index():
@@ -15,6 +20,24 @@ def db_con():
 
     except Exception as e:
         return str(e)
+
+@bp.route('/send/email')
+def send_email():
+    try:
+        msg = Message(
+                        'COVID CARE CENTER',
+                        sender = var.MAIL_SENDER,
+                        recipients = ['info.vivekbhawsar@gmail.com']
+                    )
+        msg.body = 'Hello Flask message sent from Flask-Mail'
+        # msg.html = "<b> COVID CARE CENTER </b>"
+        mail.send(msg)
+        return 'Mail Sent Check Your Inbox !!!'
+
+    except Exception as e:
+        return str(e)
+
+
 
 
 
