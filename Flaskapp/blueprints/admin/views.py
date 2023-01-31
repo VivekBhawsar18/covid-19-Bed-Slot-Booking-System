@@ -4,7 +4,7 @@ from Flaskapp.models.hospitalUser import *
 from config import AdminCred
 from flask_mail import Message
 
-bp = Blueprint('admin' , __name__ , static_folder='static' , template_folder='templates')
+bp = Blueprint('admin' , __name__ , static_folder='home/static' , template_folder='templates')
 
 var = AdminCred()
 
