@@ -10,11 +10,11 @@ class MailConfig:
     MAIL_SERVER='smtp.gmail.com'
     MAIL_PORT='465'
     MAIL_USE_SSL=True
-    MAIL_USERNAME=os.environ.get('gmail_account')
-    MAIL_PASSWORD=os.environ.get('gmail_acc_pass')
+    MAIL_USERNAME=os.environ.get('GMAIL_ACCOUNT')
+    MAIL_PASSWORD=os.environ.get('GAMIL_ACC_PASS')
 
 
 class AdminCred:
     ADMIN_NAME = os.environ.get('ADMIN_NAME')
     ADMIN_PWD  = os.environ.get('ADMIN_PASS')
-    MAIL_SENDER = os.environ.get('gmail_account')
+    MAIL_SENDER = os.environ.get('GMAIL_ACCOUNT')
