@@ -30,14 +30,80 @@ def hospital_home():
         login_user(user)
         return redirect(url_for('hospital.hospital_dashboard' , name=current_user.email))
 
-@bp.route('/dashboard')
+
+@bp.route('/dashboard' , methods=['GET' , 'POST'])
 @login_required
 def hospital_dashboard():
-    return render_template('hdashboard.html')
 
-@bp.route('/add/info')
-def hospital_info():
-    pass
+    email=current_user.email
+    posts=Hospitaluser.query.filter_by(email=email).first()
+    code=posts.hcode
+    postsdata=Hospitaldata.query.filter_by(hcode=code).first()
+
+    if request.method=='POST':
+            hcode=request.form.get('hcode')
+            hname=request.form.get('hname')
+            nbed=request.form.get('normalbed')
+            hbed=request.form.get('hicubeds')
+            ibed=request.form.get('icubeds')
+            vbed=request.form.get('ventbeds')
+            hcode=hcode.upper()
+
+            hospital_user = Hospitaluser.query.filter_by( hcode = hcode ).first()
+            hospital_data = Hospitaldata.query.filter_by( hcode = hcode ).first()
+
+            if hospital_data:
+                flash("Data is already Present you can update it..","primary")
+                return render_template("hdashboard.html" , postsdata=postsdata)
+
+            if hospital_user:            
+                new_user = Hospitaldata( hcode=hcode, hname=hname, normalbed=nbed , hicubed=hbed , icubed=ibed , vbed=vbed ) 
+                db.session.add(new_user)
+                db.session.commit()
+                flash("Data Is Added","primary")
+                return redirect(url_for('hospital.hospital_dashboard'))
+
+    return render_template('hdashboard.html' , postsdata=postsdata)
+
+
+@bp.route('/update/<string:id>' , methods=['GET' ,'POST'])
+@login_required
+def hospital_data_update(id):
+
+    posts=Hospitaldata.query.filter_by(id=id).first()
+
+    if request.method=="POST":
+
+        hname=request.form.get('hname')
+        nbed=request.form.get('normalbed')
+        hbed=request.form.get('hicubeds')
+        ibed=request.form.get('icubeds')
+        vbed=request.form.get('ventbeds')
+
+        posts.hname = hname
+        posts.normalbed = nbed
+        posts.hicubed = hbed
+        posts.icubed = ibed
+        posts.vbed = vbed
+            
+        db.session.commit()
+        flash("Slot Updated","info")
+        return redirect(url_for('hospital.hospital_dashboard'))
+
+
+    return render_template('hdataUpdate.html' , posts=posts)
+
+
+@bp.route('/delete/<string:id>')
+@login_required
+def hospital_data_delete(id):
+
+    Hospitaldata.query.filter_by(id=id).delete()
+    db.session.commit()
+    flash("Data Deleted Succesfully" , "danger")
+
+    return redirect(url_for('hospital.hospital_dashboard'))
+
 
 @bp.route('/logout')
 @login_required

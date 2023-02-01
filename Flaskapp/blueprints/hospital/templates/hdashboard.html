@@ -8,21 +8,21 @@
 <br>
 
 <div class="container mt-4">
-    <div class="display-4 text-center text-dark">Add Hospital Data</div>
+    <div class=" display-4 text-center text-dark bg-light">Add Hospital Data</div>
     <br>
     <div class="row">
 
         <div class="col-md-4">
 
             <div class="card">
-                {% include "message.html" %}
                 <br>
+                {% include "message.html" %}
                 <br>
                 <h4 class="text-center text-dark">Covid Care Center</h4>
                 <div class="card-body bg-light">
 
-                    <form action="/addhospitalinfo" method="post">
-                        <!-- <Center>Hospital Code : {{current_user.hcode}}</Center> -->
+                    <form action="/hospital/dashboard" method="post">
+                        <Center>Hospital Code : {{current_user.hcode}}</Center>
                         <div class="form-group">
                             <input type="text" class="form-control mt-2" name="hcode" value="{{current_user.hcode}}"
                                 placeholder="Enter the Hospital Code" required hidden>
@@ -53,9 +53,8 @@
                         </div>
 
                         <br>
-                        <div class="field button-field">
-                            <button type="submit">Add Data</button>
-
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="submit">Add Data</button>
                         </div>
 
                     </form>
@@ -65,27 +64,54 @@
 
 
         </div>
-        <!-- <div class="container mt-4">
 
-    <div class="display-4 text-center text-dark">Add Hospital Data</div>
+
+        <div class="col-md-8">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://source.unsplash.com/600x1000/?covid,hospital" class="img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <br>
+                        <div class="card-body bg-light">
+                            <h5 class="card-title text-center bg-light ">Hospital Data</h5>
+                            <div class=" card bg-dark " style=" width: 33rem;">
+                                <ul class="list-group list-group-flush bg-dark">
+                                    <li class="list-group-item">Hospital Code : <b>{{postsdata.hcode}}</b> </li>
+                                    <li class="list-group-item">Hospital Name : <b>{{postsdata.hname}}</b></li>
+                                    <li class="list-group-item">Normal Beds Available :<b>{{postsdata.normalbed}}</b>
+                                    </li>
+                                    <li class="list-group-item">H.I.C.U Beds Available: <b>{{postsdata.hicubed}}</b>
+                                    </li>
+                                    <li class="list-group-item">I.C.U Beds Available :<b>{{postsdata.icubed}}</b> </li>
+                                    <li class="list-group-item">Ventilators Beds Available : <b>{{postsdata.vbed}}</b>
+                                    </li>
+                                    </li>
+
+                                    <li class="list-group-item"><a
+                                            href="{{ url_for('hospital.hospital_data_update' , id = postsdata.id)}}"><i
+                                                class="fas fa-edit"></i></a> </i>
+
+                                        <a class="ml-4" confirm("Are you sure to Delete data");
+                                            href="{{ url_for('hospital.hospital_data_delete' , id = postsdata.id)}}"><i
+                                                class="fas fa-trash-alt"></i></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
 
 </div>
 
-<div class="row">
-    <div class="col-md-6">
-        <div class="card">
-            <div class="card-body">
-                <form action="/hospital/add/info" method="post">
-                    <a href="#">how are you</a>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-
-    </div>
-
-</div> -->
-
-        {% endblock body %}
+{% endblock body %}
