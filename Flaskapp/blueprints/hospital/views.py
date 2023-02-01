@@ -1,6 +1,8 @@
 from flask import Blueprint, flash , render_template , request , redirect , url_for
-from Flaskapp.models.hospitalUser import *
-from Flaskapp.extensions import db , bcrypt 
+from Flaskapp.models.hospital import *
+from Flaskapp.extensions import db
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import login_user , login_required, logout_user , current_user
 
 bp = Blueprint('hospital' , __name__ , static_folder='static' , template_folder='templates' )
 
@@ -8,26 +10,38 @@ bp = Blueprint('hospital' , __name__ , static_folder='static' , template_folder=
 def hospital_login():
     return render_template('hlogin.html')
 
-@bp.route('/home' , methods=['GET' , 'POST'])
-def hospital_home():
 
-    if request.method=="POST":
+@bp.route('/login' , methods=['POST'])
+def hospital_home():
+        # login code goes here
         email=request.form.get('email')
-        pwd=request.form.get('password')
+        password=request.form.get('password')
 
         user=Hospitaluser.query.filter_by(email=email).first()
 
-        if user and bcrypt.check_password_hash(user.password,pwd):
-            # login_user(user)
-            # flash("Login Success","info")
-            # session.pop('srfid', None)
-            # session.clear()
-            # return render_template("index.html")
-            return "<h1>Login success</h1>"
-        else:
-            # flash("Invalid Credentials","danger")
-            # return render_template("hospitallogin.html")
-            return "<h1>login fail</h1>"
+        # check if the user actually exists
+        # take the user-supplied password, hash it, and compare it to the hashed password in the database
+        if not user or not  check_password_hash(user.password,password):
 
-    return render_template('hospitallogin.html')
+            flash('Please check your login details and try again.' ,'danger')
+            return redirect(url_for('hospital.hospital_login')) # if the user doesn't exist or password is wrong, reload the page
 
+        # if the above check passes, then we know the user has the right credentials
+        login_user(user)
+        return redirect(url_for('hospital.hospital_dashboard' , name=current_user.email))
+
+@bp.route('/dashboard')
+@login_required
+def hospital_dashboard():
+    return render_template('hdashboard.html')
+
+@bp.route('/add/info')
+def hospital_info():
+    pass
+
+@bp.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash("You are logout ", "primary")
+    return redirect(url_for('hospital.hospital_login'))

@@ -1,8 +1,9 @@
 from flask import Blueprint, flash , render_template , request , redirect , url_for , session
-from Flaskapp.extensions import db , bcrypt , mail
-from Flaskapp.models.hospitalUser import *
+from Flaskapp.extensions import db , mail
+from Flaskapp.models.hospital import *
 from config import AdminCred
 from flask_mail import Message
+from werkzeug.security import generate_password_hash, check_password_hash
 
 bp = Blueprint('admin' , __name__ , static_folder='static' , template_folder='templates')
 
@@ -42,7 +43,7 @@ def hos_user():
             email = request.form.get('email')
             password = request.form.get('password')
 
-            encpassword = bcrypt.generate_password_hash(password)
+            encpassword = generate_password_hash(password , method='sha256')
             hcode=hcode.upper() 
             
             userEmail= Hospitaluser.query.filter_by(email=email).first()
