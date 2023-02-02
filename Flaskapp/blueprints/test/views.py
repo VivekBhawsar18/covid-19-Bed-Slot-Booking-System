@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, session
 from Flaskapp.models.test import Test
 from flask_mail import  Message
 from Flaskapp.extensions import mail
@@ -37,6 +37,19 @@ def send_email():
     except Exception as e:
         return str(e)
 
+# @bp.context_processor
+# def context_processor(value):
+#     return dict(key=value , hello='how')
+
+# @bp.route('/session')
+# def test_session():
+#     try:
+#         session['email'] = 'vivekcoder18' 
+#         email = session['email']
+#         return str(context_processor('hello'))
+
+#     except Exception as e:
+#         return str(e)
 
 
 

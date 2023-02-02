@@ -17,15 +17,20 @@
 {% endblock dropdown %}
 
 {% block form %}
-
+<br>
 <section class="container1 forms">
     <div class="form login">
+
         <div class="form-content">
+            {% include 'message.html' %}
             <header>Signup</header>
-            <form action="/signup" method="post" id="sipfrm">
+            <form action="/user/signup" method="post" id="sipfrm">
+
                 <div class="field input-field">
-                    <input type="text" placeholder="Enter SRF ID" class="input" name="srf" minlength="10" maxlength="10"
-                        required>
+                    <input type="text" placeholder="First Name." class="input" name="fname" maxlength="50" required>
+                </div>
+                <div class="field input-field">
+                    <input type="text" placeholder="Last Name." class="input" name="lname" maxlength="50" required>
                 </div>
 
                 <div class="field input-field">
@@ -35,14 +40,9 @@
                 <div class="field input-field">
                     <input type="date" placeholder="Enter DOB" class="password" name="dob" required>
                 </div>
-                <!-- 
-                <div class="field input-field">
-                    <input type="password" placeholder="Confirm password" class="password">
-                    <i class='bx bx-hide eye-icon'></i>
-                </div> -->
 
                 <div class="field button-field">
-                    <button type="submit">Signup</button>
+                    <button type="submit">Get OTP</button>
                 </div>
             </form>
 
@@ -51,7 +51,6 @@
                         class="link login-link">Login</a></span>
             </div>
         </div>
-        <!-- <script src="static/assets/js/v-main.js"></script> -->
 
 
         {% endblock form %}
