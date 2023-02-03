@@ -46,7 +46,7 @@ def user_login():
 
                 mail.send(msg)
 
-                flash("OTP Sent" ,"info")
+                flash("OTP Sent" ,"success")
                 return render_template("loginVerification.html")
 
             flash("Incorrect Password" ,"danger")
@@ -99,7 +99,7 @@ def user_signup():
         session['dob']=dob
 
 
-        flash("OTP sent" , "info")
+        flash("OTP sent" , "success")
         return render_template('emailVerification.html')
         
     return render_template('userSignup.html')
@@ -139,7 +139,7 @@ def verify_email():
 
             mail.send(msg)
 
-            flash('Congratulations, your account has been successfully created.' , "info")
+            flash('Congratulations, your account has been successfully created.' , "success")
             return redirect(url_for('user.user_login'))
 
     

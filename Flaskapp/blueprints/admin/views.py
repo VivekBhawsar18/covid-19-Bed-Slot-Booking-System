@@ -3,13 +3,13 @@ from Flaskapp.extensions import db , mail
 from Flaskapp.models.hospital import *
 from config import AdminCred
 from flask_mail import Message
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import generate_password_hash
 
 bp = Blueprint('admin' , __name__ , static_folder='static' , template_folder='templates')
 
 var = AdminCred()
 
-
+# admin login
 @bp.route('/login' , methods=['POST' , 'GET'])
 def admin_login():
     if request.method == 'POST':
@@ -30,31 +30,40 @@ def admin_login():
 
     return render_template('adminLogin.html')
 
+
+# adding new hospital user 
 @bp.route("/add", methods=['POST' , 'GET'])
 def hos_user():
 
+        # Checking in session if admin is present or not 
         if request.method=='POST' and session['user']==var.ADMIN_NAME:
 
+            # Data to be saved in db .
             hcode = request.form.get('hcode')
             email = request.form.get('email')
             password = request.form.get('password')
 
+            # Encrypting user-supplied password before saving it into db .
             encpassword = generate_password_hash(password , method='sha256')
             hcode=hcode.upper() 
             
             userEmail= Hospitaluser.query.filter_by(email=email).first()
-            userHcode = Hospitaluser.query.filter_by(hcode=hcode).first()
+            userHcode = Hospitaluser.query.filter_by(hcode=hcode).first() 
 
-            # if  userEmail or userHcode:
+
+            # this is method to check if the user-supplied email already exists .
             if  userEmail:
                 flash("Email is already taken","warning")
                 return render_template('adminHome.html')
 
+            # this is method to check check if the user-supplied Hospital Code already exists .
             elif userHcode :
                 flash("Hcode is already taken","warning")
                 return render_template('adminHome.html')       
                 
 
+            # if the above check passes, then we know the user-supplied data is unique.
+            # this is method  to send email.
             msg = Message(
                     f' COVID CARE CENTER Congratulation .! You can now Login on MediLab',
                     sender = var.MAIL_SENDER,
@@ -78,6 +87,8 @@ def hos_user():
         flash("Login and try Again","warning")
         return redirect(url_for('admin.admin_login'))
 
+
+# admin logout 
 @bp.route("/logout")
 def admin_logout():
     

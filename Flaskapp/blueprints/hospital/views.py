@@ -8,7 +8,7 @@ from flask_login import login_user , login_required, logout_user , current_user
 bp = Blueprint('hospital' , __name__ , static_folder='static' , template_folder='templates' )
 
 
-#Hospital Login Page
+#Hospital Login 
 @bp.route('/login' , methods=[ 'GET','POST'])
 def hospital_login():
 
