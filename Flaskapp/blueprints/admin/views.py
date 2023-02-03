@@ -9,13 +9,9 @@ bp = Blueprint('admin' , __name__ , static_folder='static' , template_folder='te
 
 var = AdminCred()
 
-@bp.route('/login')
+
+@bp.route('/login' , methods=['POST' , 'GET'])
 def admin_login():
-    return render_template('adminLogin.html')
-
-
-@bp.route('/home' , methods=['POST' , 'GET'])
-def admin_home():
     if request.method == 'POST':
         username = request.form.get('username') 
         password = request.form.get('password')
@@ -25,14 +21,14 @@ def admin_home():
             
         if ( username==admin_name and password==admin_pwd ):
             session['user'] = admin_name
-            flash("login success","info")
+            flash("login success","success")
             return render_template('adminHome.html')
 
         else:
             flash("Invalid Credentials","danger")
             return redirect(url_for('admin.admin_login'))
 
-    return redirect(url_for('admin.admin_login'))
+    return render_template('adminLogin.html')
 
 @bp.route("/add", methods=['POST' , 'GET'])
 def hos_user():
@@ -57,34 +53,30 @@ def hos_user():
             elif userHcode :
                 flash("Hcode is already taken","warning")
                 return render_template('adminHome.html')       
-
-            try:
                 
-                msg = Message(
-                        'COVID CARE CENTER',
-                        sender = var.MAIL_SENDER,
-                        recipients = [email]
+
+            msg = Message(
+                    f' COVID CARE CENTER Congratulation .! You can now Login on MediLab',
+                    sender = var.MAIL_SENDER,
+                    recipients = [email]
                     )
 
-                msg.body = (f"Welcome thanks for choosing us\nYour Login Credentials Are:\nEmail Address: {email}\nPassword: {password}\n\nHospital Code {hcode}\n\nDo not share your password\n\n\nThank You...")
+            msg.html = render_template('successEmail.html' , hcode=hcode , email=email , password=password )
 
-                mail.send(msg)
+            mail.send(msg)
 
-                # this is method  to save data in db
-                newuser = Hospitaluser( hcode=hcode, email=email, password=encpassword ) 
-                db.session.add(newuser)
-                db.session.commit()
-                print(var.MAIL_SENDER)
+            # this is method  to save data in db
+            newuser = Hospitaluser( hcode=hcode, email=email, password=encpassword ) 
+            db.session.add(newuser)
+            db.session.commit()
+            print(var.MAIL_SENDER)
 
-                flash("Mail Sent and Data Inserted Successfully","warning")
-                return render_template("adminHome.html")
+            flash("Mail Sent and Data Inserted Successfully","success")
+            return render_template("adminHome.html")
 
-            except Exception as e:
-                return str(e)
-
-        else:
-            flash("Login and try Again","warning")
-            return redirect(url_for('admin.admin_login'))
+        
+        flash("Login and try Again","warning")
+        return redirect(url_for('admin.admin_login'))
 
 @bp.route("/logout")
 def admin_logout():

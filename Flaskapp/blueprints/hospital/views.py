@@ -1,18 +1,18 @@
 from flask import Blueprint, flash , render_template , request , redirect , url_for
 from Flaskapp.models.hospital import *
 from Flaskapp.extensions import db
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import check_password_hash
 from flask_login import login_user , login_required, logout_user , current_user
+
 
 bp = Blueprint('hospital' , __name__ , static_folder='static' , template_folder='templates' )
 
-@bp.route('/login')
+
+#Hospital Login Page
+@bp.route('/login' , methods=[ 'GET','POST'])
 def hospital_login():
-    return render_template('hlogin.html')
 
-
-@bp.route('/login' , methods=['POST'])
-def hospital_home():
+    if request.method=='POST': 
         # login code goes here
         email=request.form.get('email')
         password=request.form.get('password')
@@ -23,14 +23,18 @@ def hospital_home():
         # take the user-supplied password, hash it, and compare it to the hashed password in the database
         if not user or not  check_password_hash(user.password,password):
 
-            flash('Please check your login details and try again.' ,'danger')
+            flash('Please check your login details and try again.' ,'warning')
             return redirect(url_for('hospital.hospital_login')) # if the user doesn't exist or password is wrong, reload the page
 
         # if the above check passes, then we know the user has the right credentials
         login_user(user)
+        flash('Login Successfull.' , 'success')
         return redirect(url_for('hospital.hospital_dashboard' , name=current_user.email))
 
+    return render_template('hlogin.html')
 
+
+#Hospital dashboard Page
 @bp.route('/dashboard' , methods=['GET' , 'POST'])
 @login_required
 def hospital_dashboard():
@@ -40,7 +44,8 @@ def hospital_dashboard():
     code=posts.hcode
     postsdata=Hospitaldata.query.filter_by(hcode=code).first()
 
-    if request.method=='POST':
+    # Adding Hospital data 
+    if request.method=='POST':              
             hcode=request.form.get('hcode')
             hname=request.form.get('hname')
             nbed=request.form.get('normalbed')
@@ -52,26 +57,29 @@ def hospital_dashboard():
             hospital_user = Hospitaluser.query.filter_by( hcode = hcode ).first()
             hospital_data = Hospitaldata.query.filter_by( hcode = hcode ).first()
 
+            # check if the hospital data already exists .
             if hospital_data:
                 flash("Data is already Present you can update it..","primary")
                 return render_template("hdashboard.html" , postsdata=postsdata)
 
+            # if the above check passes, take the user-supplied data and store it into database.
             if hospital_user:            
                 new_user = Hospitaldata( hcode=hcode, hname=hname, normalbed=nbed , hicubed=hbed , icubed=ibed , vbed=vbed ) 
                 db.session.add(new_user)
                 db.session.commit()
-                flash("Data Is Added","primary")
+                flash("Data Is Added","success")
                 return redirect(url_for('hospital.hospital_dashboard'))
+    return render_template('hdashboard.html' , postsdata=postsdata )
 
-    return render_template('hdashboard.html' , postsdata=postsdata)
 
-
+# Hospital data update
 @bp.route('/update/<string:id>' , methods=['GET' ,'POST'])
 @login_required
 def hospital_data_update(id):
 
-    posts=Hospitaldata.query.filter_by(id=id).first()
+    posts=Hospitaldata.query.filter_by(id=id).first() # Taking current_user id and bringing data from database
 
+    # if the above check passes, update database entry by user-supplied data .
     if request.method=="POST":
 
         hname=request.form.get('hname')
@@ -87,24 +95,26 @@ def hospital_data_update(id):
         posts.vbed = vbed
             
         db.session.commit()
-        flash("Slot Updated","info")
+        flash("Slot Updated","success")
         return redirect(url_for('hospital.hospital_dashboard'))
 
-
+    
     return render_template('hdataUpdate.html' , posts=posts)
 
 
+# Hospital data delete 
 @bp.route('/delete/<string:id>')
 @login_required
 def hospital_data_delete(id):
 
-    Hospitaldata.query.filter_by(id=id).delete()
+    Hospitaldata.query.filter_by(id=id).delete() # Taking current_user id and delete its all data stored in database
     db.session.commit()
     flash("Data Deleted Succesfully" , "danger")
 
     return redirect(url_for('hospital.hospital_dashboard'))
 
 
+# Logout form the hospital panel 
 @bp.route('/logout')
 @login_required
 def logout():

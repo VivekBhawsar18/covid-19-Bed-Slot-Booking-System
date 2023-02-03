@@ -52,7 +52,7 @@ def user_login():
             flash("Incorrect Password" ,"danger")
             return redirect(url_for('user.user_login'))
 
-        flash('Email not registered . Please SignUp First.', "danger")
+        flash('Email not registered . SignUp First.', "danger")
         return redirect(url_for('user.user_login'))
 
 
