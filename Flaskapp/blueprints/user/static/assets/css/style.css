@@ -218,6 +218,16 @@ h6 {
   display: inline-block;
 }
 
+.appointment-mybtn {   
+  visibility: hidden;
+  margin-left: 100px;
+  border-radius: 50px;
+  padding: 8px 83px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
 .appointment-btn:hover {
   background: #166ab5;
   color: #fff;

@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, session
+from flask import Blueprint, render_template, request, session
 from Flaskapp.models.test import Test
 from flask_mail import  Message
 from Flaskapp.extensions import mail
@@ -53,5 +53,11 @@ def send_email():
 
 
 
+# @bp.route('/sumit/test' , mehtods=['GET' , 'POST'])
+# def test_sb():
 
+#     if request.method=="POST":
+#         return"this is post method"
 
+#     return "this is get method"
+    # return "This is get method"

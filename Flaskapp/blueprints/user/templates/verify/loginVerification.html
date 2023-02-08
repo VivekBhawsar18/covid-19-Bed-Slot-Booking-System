@@ -1,0 +1,29 @@
+{% extends 'userBase.html' %}
+{% block title %} OTP Varification{% endblock title %}
+
+{% block body %}
+<div class="containerI">
+    <section class="container1 forms">
+        <div class="form login">
+            <div class="form-content">
+                {% include 'message.html' %}
+                <h3>One-time password has been sent to Your registered email-id.</h3>
+                <h3>Please check the email for verification</h3>
+                <form action="/user/loginverify" method="post" id="sipfrm">
+
+                    <div class="field input-field">
+                        <input type="text" placeholder="Enter OTP" class="input" name="otp" minlength="6" maxlength="6"
+                            required>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+
+        {% endblock body %}

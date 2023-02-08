@@ -7,17 +7,19 @@
 <section class="container1 forms">
     <div class="form login">
         <div class="form-content">
-            {% include "message.html" %}
             <header>Hospital Login</header>
             <form action="/hospital/login" method="post" id="logFrm">
+                {% include "message.html" %}
                 <div class="field input-field">
                     <input type="email" placeholder="Enter Email" class="input" name="email" required>
                 </div>
 
                 <div class="field input-field">
-                    <input type="password" placeholder="Enter Password" class="password" name="password" required>
+                    <input type="password" placeholder="Enter Password" class="password" name="password" minlength="8"
+                        required>
                     <i class='bx bx-hide eye-icon'></i>
                 </div>
+
 
                 <div class="field button-field">
                     <button type="submit">Login</button>

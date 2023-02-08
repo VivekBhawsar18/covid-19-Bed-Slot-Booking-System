@@ -1,0 +1,139 @@
+{% extends 'userBase.html' %}
+{% block title %}Slot Booking{% endblock title %}
+
+{% block body %}
+<div class="containerBooking">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container mt-4">
+
+        <div class=" mycontainer1 display-6 text-center  ">Book Bed Slot</div>
+        <!-- <div class=" display-5 text-center text-dark bg-light ">Book Bed Slot</div> -->
+
+        <br>
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="card">
+                    <br>
+                    {% include "message.html" %}
+                    <h4 class="text-center text-dark">Covid Care Center</h4>
+                    <div class="card-body bg-light">
+
+                        <form action="/user/slotbooking" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-2" name="email" value="{{current_user.email}}"
+                                    required readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="bedtype" name="hcode" class="form-control mt-2" required>
+                                    <option selected>Select Hospital</option>
+                                    {% for code in query %}
+                                    <option value="{{code.hcode}}">{{code.hcode}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="bedtype" name="bedtype" class="form-control mt-2" required>
+                                    <option selected>Choose Bed Type</option>
+                                    <option value="NormalBed">NormalBed</option>
+                                    <option value="HICUBed">HICU Bed</option>
+                                    <option value="ICUBed">ICU Bed</option>
+                                    <option value="VENTILATORBed">VENTILATOR Bed</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="number" class="form-control mt-2" name="spo2" placeholder="Oxygen Level "
+                                    required />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-2" name="pname" placeholder="Patient Name"
+                                    required />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" class="form-control mt-2" name="pphone"
+                                    placeholder="Patient Phone Number" minlength="10" required />
+                            </div>
+
+                            <br>
+                            <div class="d-grid gap-1">
+                                <button class="btn btn-primary" type="submit">Book Slot</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="col-md-8 overflow: scroll;">
+                <table class="table table-dark">
+                    <thead>
+                        <h3 class="text-center text-white bg-dark">Available Beds</h3>
+                        <tr>
+
+                            <th scope="col">Hospital Code</th>
+                            <th scope="col">Hospital Name</th>
+                            <th scope="col">Normal Bed</th>
+                            <th scope="col">HICU Bed</th>
+                            <th scope="col">I.C.U Bed</th>
+                            <th scope="col">Ventilator Bed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for post in query %}
+                        <tr>
+                            <td>{{post.hcode}}</td>
+                            <td>{{post.hname}}</td>
+
+                            {% if post.normalbed >= 1 %}
+                            <td>{{post.normalbed}}</td>
+                            {% else %}
+                            <td>Not Available</td>
+                            {% endif %}
+
+                            {% if post.hicubed >= 1 %}
+                            <td>{{post.hicubed}}</td>
+                            {% else %}
+                            <td>Not Available</td>
+                            {% endif %}
+
+                            {% if post.icubed >= 1 %}
+                            <td>{{post.icubed}}</td>
+                            {% else %}
+                            <td>Not Available</td>
+                            {% endif %}
+
+                            {% if post.vbed >= 1 %}
+                            <td>{{post.vbed}}</td>
+                            {% else %}
+                            <td>Not Available</td>
+                            {% endif %}
+
+                        </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock body %}

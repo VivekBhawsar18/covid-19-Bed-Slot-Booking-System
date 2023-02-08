@@ -1,8 +1,11 @@
-from flask import Flask, session
+from flask import Flask
 from config import Config 
 from config import MailConfig 
 from Flaskapp.extensions import db , mail , login_manager
 from Flaskapp.models.hospital import *
+from Flaskapp.models.users import *
+# from Flaskapp.blueprints.hospital.views import table_name
+
 
 app = Flask(__name__)
 
@@ -13,11 +16,15 @@ app.config.from_object(MailConfig)
 # Initialize Flask extensions here
 db.init_app(app)
 mail.init_app(app)
-login_manager.login_view = 'hospital.hospital_login'
 login_manager.init_app(app)
+login_manager.login_view = 'home.index'
+login_manager.login_message_category = "info"
 
 @login_manager.user_loader
-def load_user(user_id):
+def user_load(user_id):
+        user = User.query.get(int(user_id))
+        if user:
+                return user
         # since the user_id is just the primary key of our user table, use it in the query for the user
         return Hospitaluser.query.get(int(user_id))
 

@@ -1,56 +1,50 @@
 {% extends 'userBase.html' %}
 {% block title %} User SignUp{% endblock title %}
 
-{% block navbar %}
-<li><a class="nav-link scrollto active" href="/">HOME</a></li>
 
-{% endblock navbar %}
-
-{% block dropdown %}
-<li class="dropdown"><a href="/login"><span>LOGIN</span> <i class="bi bi-chevron-down"></i></a>
-    <ul>
-        <li><a href="{{ url_for('user.user_login') }}">User Login</a></li>
-        <li><a href="{{ url_for('hospital.hospital_login') }}">Hospital Login</a></li>
-        <li><a href="{{ url_for( 'admin.admin_login' ) }}">Admin Login</a></li>
-    </ul>
-</li>
-{% endblock dropdown %}
-
-{% block form %}
+{% block body %}
 <br>
-<section class="container1 forms">
-    <div class="form login">
+<br>
+<div class="containerI">
+    <section class="container1 forms">
+        <div class="form login">
 
-        <div class="form-content">
-            {% include 'message.html' %}
-            <header>Signup</header>
-            <form action="/user/signup" method="post" id="sipfrm">
+            <div class="form-content">
+                {% include 'message.html' %}
+                <header>Signup</header>
+                <form action="/user/signup" method="post" id="sipfrm">
 
-                <div class="field input-field">
-                    <input type="text" placeholder="First Name." class="input" name="fname" maxlength="50" required>
+                    <div class="field input-field">
+                        <input type="text" placeholder="Full Name" class="input" name="name" maxlength="50" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" name="email" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="tel" placeholder="Contact No." class="contact" name="contact" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="text" placeholder="Gender" class="contact" name="gender" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="text" placeholder="Address" class="contact" name="address" required>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Get OTP</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account? <a href="{{ url_for('user.user_login') }}"
+                            class="link login-link">Login</a></span>
                 </div>
-                <div class="field input-field">
-                    <input type="text" placeholder="Last Name." class="input" name="lname" maxlength="50" required>
-                </div>
-
-                <div class="field input-field">
-                    <input type="email" placeholder="Enter Email" class="input" name="email" required>
-                </div>
-
-                <div class="field input-field">
-                    <input type="date" placeholder="Enter DOB" class="password" name="dob" required>
-                </div>
-
-                <div class="field button-field">
-                    <button type="submit">Get OTP</button>
-                </div>
-            </form>
-
-            <div class="form-link">
-                <span>Already have an account? <a href="{{ url_for('user.user_login') }}"
-                        class="link login-link">Login</a></span>
             </div>
         </div>
 
 
-        {% endblock form %}
+        {% endblock body %}

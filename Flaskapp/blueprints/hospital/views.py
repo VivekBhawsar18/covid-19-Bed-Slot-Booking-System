@@ -20,16 +20,18 @@ def hospital_login():
         user=Hospitaluser.query.filter_by(email=email).first()
 
         # check if the user actually exists
-        # take the user-supplied password, hash it, and compare it to the hashed password in the database
-        if not user or not  check_password_hash(user.password,password):
-
+        if user:
+            # take the user-supplied password, hash it, and compare it to the hashed password in the database
+            if check_password_hash(user.password , password):
+                # if the above check passes, then we know the user has the right credentials
+                login_user(user)
+                flash('Login Successfull.' , 'success')
+                return redirect(url_for('hospital.hospital_dashboard'))
             flash('Please check your login details and try again.' ,'warning')
-            return redirect(url_for('hospital.hospital_login')) # if the user doesn't exist or password is wrong, reload the page
+            return redirect(url_for('hospital.hospital_login')) # if the user exist and password is wrong, reload the page
+        flash('User not registerd' , 'warning')
+        return redirect(url_for('hospital.hospital_login'))# if the user doesn't exist , reload the page
 
-        # if the above check passes, then we know the user has the right credentials
-        login_user(user)
-        flash('Login Successfull.' , 'success')
-        return redirect(url_for('hospital.hospital_dashboard' , name=current_user.email))
 
     return render_template('hlogin.html')
 

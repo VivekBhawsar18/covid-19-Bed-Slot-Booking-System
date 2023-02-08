@@ -20,8 +20,8 @@ def admin_login():
         admin_pwd  = var.ADMIN_PWD
             
         if ( username==admin_name and password==admin_pwd ):
-            session['user'] = admin_name
             flash("login success","success")
+            session['user'] = admin_name
             return render_template('adminHome.html')
 
         else:
@@ -74,14 +74,19 @@ def hos_user():
 
             mail.send(msg)
 
-            # this is method  to save data in db
-            newuser = Hospitaluser( hcode=hcode, email=email, password=encpassword ) 
-            db.session.add(newuser)
-            db.session.commit()
-            print(var.MAIL_SENDER)
+            try:
+                # this is method  to save data in db
+                newuser = Hospitaluser( hcode=hcode, email=email, password=encpassword ) 
+                db.session.add(newuser)
+                db.session.commit()
 
-            flash("Mail Sent and Data Inserted Successfully","success")
-            return render_template("adminHome.html")
+                flash("Mail Sent and Data Inserted Successfully","success")
+                return render_template("adminHome.html")
+            
+            except db.Error :
+                db.rollback()
+                return '<h1>An error has been passed.</h1>'
+
 
         
         flash("Login and try Again","warning")
@@ -91,8 +96,12 @@ def hos_user():
 # admin logout 
 @bp.route("/logout")
 def admin_logout():
-    
-    session.pop('user')
-    flash("You are logout admin", "primary")
 
+    if session['user']==var.ADMIN_NAME:
+    
+        session.pop('user')
+        flash("You are logout admin", "primary")
+
+        return redirect(url_for('admin.admin_login'))
     return redirect(url_for('admin.admin_login'))
+

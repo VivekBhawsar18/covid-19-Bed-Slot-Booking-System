@@ -5,7 +5,6 @@
 <br>
 <br>
 <br>
-<br>
 
 <div class="container mt-4">
     <div class=" display-4 text-center text-dark bg-light">Add Hospital Data</div>
@@ -90,6 +89,7 @@
                                     </li>
                                     </li>
 
+                                    {% if postsdata %}
 
                                     <li class="list-group-item"><a
                                             href="{{ url_for('hospital.hospital_data_update' , id = postsdata.id)}}"><i
@@ -99,6 +99,8 @@
                                             href="{{ url_for('hospital.hospital_data_delete' , id = postsdata.id)}}"><i
                                                 class="fas fa-trash-alt"></i></a>
                                     </li>
+
+                                    {% endif %}
 
                                 </ul>
                             </div>
