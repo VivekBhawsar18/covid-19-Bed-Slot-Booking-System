@@ -1,0 +1,69 @@
+{% extends 'adminBase.html' %}
+{% block title %} Hospital data {% endblock title %}
+
+{% block body %}
+<div class="containerI">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container mt-3">
+
+        <table class="table table-dark">
+            <thead>
+                <h3 class="text-center text-white bg-dark">Available Beds</h3>
+                <tr>
+
+                    <th scope="col">Hospital Code</th>
+                    <th scope="col">Hospital Name</th>
+                    <th scope="col">Normal Bed</th>
+                    <th scope="col">HICU Bed</th>
+                    <th scope="col">I.C.U Bed</th>
+                    <th scope="col">Ventilator Bed</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for post in query %}
+                <tr>
+                    <td>{{post.hcode}}</td>
+                    <td>{{post.hname}}</td>
+
+                    {% if post.normalbed >= 1 %}
+                    <td>{{post.normalbed}}</td>
+                    {% else %}
+                    <td>Not Available</td>
+                    {% endif %}
+
+                    {% if post.hicubed >= 1 %}
+                    <td>{{post.hicubed}}</td>
+                    {% else %}
+                    <td>Not Available</td>
+                    {% endif %}
+
+                    {% if post.icubed >= 1 %}
+                    <td>{{post.icubed}}</td>
+                    {% else %}
+                    <td>Not Available</td>
+                    {% endif %}
+
+                    {% if post.vbed >= 1 %}
+                    <td>{{post.vbed}}</td>
+                    {% else %}
+                    <td>Not Available</td>
+                    {% endif %}
+
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+{% endblock body %}

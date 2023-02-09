@@ -56,16 +56,37 @@
 
 
 
-            {% if session['user']=='Admin' %}
-            <a href="{{ url_for('admin.admin_logout') }}" class="appointment-btn scrollto"><span
-                    class="d-none d-md-inline">Logout</span></a>
-            {% else %}
+            {% if 'user' in session and session['user']=='Admin' %}
+
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="/">HOME</a></li>
+                    <li><a class="nav-link scrollto active" href="{{ url_for('admin.admin_dashboard') }}">Home</a></li>
 
 
-                    <li class="dropdown"><a href="{{ url_for('home.index') }}"><span>LOGIN</span> <i
+                    <li class="dropdown"><a href="{{ url_for('home.index') }}"><span>Services</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="{{ url_for('admin.hos_user') }}">Add new hospital</a></li>
+                            <li><a href="{{ url_for('admin.user_data') }}">Bookings</a></li>
+                            <li><a href="{{ url_for( 'admin.hospital_data' ) }}">Hospitals</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+            <a href="{{ url_for('admin.admin_logout') }}" class="appointment-btn scrollto"><span
+                    class="d-none d-md-inline">Logout</span></a>
+
+            {% else %}
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="/">Home</a></li>
+
+
+                    <li class="dropdown"><a href="{{ url_for('home.index') }}"><span>Login</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="{{ url_for('user.user_login') }}">User Login</a></li>
@@ -76,24 +97,38 @@
 
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+            </nav>
+            <!-- .navbar -->
             <a href="{{ url_for('user.user_login')}}" class="appointment-btn scrollto"><span
                     class="d-none d-md-inline">Bed Booking
                     Slot</span>
                 Book Now</a>
             {% endif %}
 
-
-
         </div>
-    </header><!-- End Header -->
+    </header>
+    <!-- End Header -->
 
 
-    <div class="containerI">
-        {% block form %}
+    {% block body %}
 
-        {% endblock form %}
-    </div>
+    {% endblock body %}
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://bootstrapmade.com/">Vivek Bhawsar</a>
+                </div>
+            </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Vendor JS Files -->
     <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -104,6 +139,7 @@
 
     <!-- Template Main JS File -->
     <script src="static/assets/js/main.js"></script>
+    <script src="static/assets/js/v-main.js"></script>
 
 </body>
 

@@ -1,29 +1,31 @@
 {% extends 'adminBase.html' %}
 {% block title %} Admin Login{% endblock title %}
 
-{% block form %}
+{% block body %}
+<div class="containerI">
+    <section class="container1 forms">
+        <div class="form login">
+            <div class="form-content">
+                {% include "message.html" %}
+                <header>Admin Login</header>
+                <form action="/admin/login" method="post" id="logFrm">
+                    <div class="field input-field">
+                        <input type="text" placeholder="Enter UserName" class="input" name="username" required>
+                    </div>
 
-<section class="container1 forms">
-    <div class="form login">
-        <div class="form-content">
-            {% include "message.html" %}
-            <header>Admin Login</header>
-            <form action="/admin/login" method="post" id="logFrm">
-                <div class="field input-field">
-                    <input type="text" placeholder="Enter UserName" class="input" name="username" required>
-                </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Enter Password" class="password" name="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
 
-                <div class="field input-field">
-                    <input type="password" placeholder="Enter Password" class="password" name="password" required>
-                    <i class='bx bx-hide eye-icon'></i>
-                </div>
+                    <div class="field button-field">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
 
-                <div class="field button-field">
-                    <button type="submit">Login</button>
-                </div>
-            </form>
-
+            </div>
         </div>
-        <script src="static/assets/js/v-main.js"></script>
+</div>
+<script src="static/assets/js/v-main.js"></script>
 
-        {% endblock form %}
+{% endblock body %}

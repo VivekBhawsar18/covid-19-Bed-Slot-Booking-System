@@ -11,18 +11,655 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+<style>
+    #footer {
+        color: #444444;
+        font-size: 14px;
+        background: #f1f7fd;
+    }
+
+    #footer .footer-top {
+        padding: 60px 0 30px 0;
+        background: #fff;
+        box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+    }
+
+    #footer .footer-top .footer-contact {
+        margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-contact h4 {
+        font-size: 22px;
+        margin: 0 0 30px 0;
+        padding: 2px 0 2px 0;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    #footer .footer-top .footer-contact p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+        font-family: "Raleway", sans-serif;
+        color: #777777;
+    }
+
+    #footer .footer-top h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #444444;
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    #footer .footer-top .footer-links {
+        margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer .footer-top .footer-links ul i {
+        padding-right: 2px;
+        color: #1c84e3;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    #footer .footer-top .footer-links ul li {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #footer .footer-top .footer-links ul li:first-child {
+        padding-top: 0;
+    }
+
+    #footer .footer-top .footer-links ul a {
+        color: #777777;
+        transition: 0.3s;
+        display: inline-block;
+        line-height: 1;
+    }
+
+    #footer .footer-top .footer-links ul a:hover {
+        text-decoration: none;
+        color: #1977cc;
+    }
+
+    #footer .footer-newsletter {
+        font-size: 15px;
+    }
+
+    #footer .footer-newsletter h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #444444;
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    #footer .footer-newsletter form {
+        margin-top: 30px;
+        background: #fff;
+        padding: 6px 10px;
+        position: relative;
+        border-radius: 50px;
+        text-align: left;
+        border: 1px solid #bfdcf7;
+    }
+
+    #footer .footer-newsletter form input[type=email] {
+        border: 0;
+        padding: 4px 8px;
+        width: calc(100% - 100px);
+    }
+
+    #footer .footer-newsletter form input[type=submit] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 0;
+        background: none;
+        font-size: 16px;
+        padding: 0 20px;
+        background: #1977cc;
+        color: #fff;
+        transition: 0.3s;
+        border-radius: 50px;
+    }
+
+    #footer .footer-newsletter form input[type=submit]:hover {
+        background: #1c84e3;
+    }
+
+    #footer .credits {
+        padding-top: 5px;
+        font-size: 13px;
+        color: #444444;
+    }
+
+    #footer .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #1977cc;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+    }
+
+    #footer .social-links a:hover {
+        background: #1c84e3;
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+
+<style>
+    .mycontainer1 {
+        background-color: #1977cc;
+        color: #fff;
+        opacity: .7;
+    }
+</style>
+
+<style>
+    /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    #preloader:before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid #1977cc;
+        border-top-color: #d1e6f9;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: animate-preloader 1s linear infinite;
+        animation: animate-preloader 1s linear infinite;
+    }
+
+    @-webkit-keyframes animate-preloader {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes animate-preloader {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+    .back-to-top {
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        right: 15px;
+        bottom: 15px;
+        z-index: 996;
+        background: #1977cc;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        transition: all 0.4s;
+    }
+
+    .back-to-top i {
+        font-size: 28px;
+        color: #fff;
+        line-height: 0;
+    }
+
+    .back-to-top:hover {
+        background: #298ce5;
+        color: #fff;
+    }
+
+    .back-to-top.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .datepicker-dropdown {
+        padding: 20px !important;
+    }
+
+    /*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+    #topbar {
+        background: #fff;
+        height: 40px;
+        font-size: 14px;
+        transition: all 0.5s;
+        z-index: 996;
+    }
+
+    #topbar.topbar-scrolled {
+        top: -40px;
+    }
+
+    #topbar .contact-info a {
+        line-height: 1;
+        color: #444444;
+        transition: 0.3s;
+    }
+
+    #topbar .contact-info a:hover {
+        color: #1977cc;
+    }
+
+    #topbar .contact-info i {
+        color: #1977cc;
+        padding-right: 4px;
+        margin-left: 15px;
+        line-height: 0;
+    }
+
+    #topbar .contact-info i:first-child {
+        margin-left: 0;
+    }
+
+    #topbar .social-links a {
+        color: #437099;
+        padding-left: 15px;
+        display: inline-block;
+        line-height: 1px;
+        transition: 0.3s;
+    }
+
+    #topbar .social-links a:hover {
+        color: #1977cc;
+    }
+
+    #topbar .social-links a:first-child {
+        border-left: 0;
+    }
+
+    /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+    #header {
+        background: #fff;
+        transition: all 0.5s;
+        z-index: 997;
+        padding: 15px 0;
+        top: 40px;
+        box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+    }
+
+    #header.header-scrolled {
+        top: 0;
+    }
+
+    #header .logo {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #header .logo a {
+        color: #2c4964;
+    }
+
+    #header .logo img {
+        max-height: 40px;
+    }
+
+    /**
+* Appointment Button *
+*/
+    .appointment-btn {
+        margin-left: 25px;
+        background: #1977cc;
+        color: #fff;
+        border-radius: 50px;
+        padding: 8px 25px;
+        white-space: nowrap;
+        transition: 0.3s;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .appointment-btn:hover {
+        background: #166ab5;
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        .appointment-btn {
+            margin: 0 15px 0 0;
+            padding: 6px 18px;
+        }
+    }
+
+    /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+    /**
+* Desktop Navigation 
+*/
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .navbar li {
+        position: relative;
+    }
+
+    .navbar>ul>li {
+        position: relative;
+        white-space: nowrap;
+        padding: 8px 0 8px 20px;
+    }
+
+    .navbar a,
+    .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #2c4964;
+        white-space: nowrap;
+        transition: 0.3s;
+        border-bottom: 2px solid #fff;
+        padding: 5px 2px;
+    }
+
+    .navbar a i,
+    .navbar a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+    }
+
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>a {
+        color: #1977cc;
+        border-color: #1977cc;
+    }
+
+    .navbar .dropdown ul {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.3s;
+    }
+
+    .navbar .dropdown ul li {
+        min-width: 200px;
+    }
+
+    .navbar .dropdown ul a {
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: none;
+        color: #082744;
+        border: none;
+    }
+
+    .navbar .dropdown ul a i {
+        font-size: 12px;
+    }
+
+    .navbar .dropdown ul a:hover,
+    .navbar .dropdown ul .active:hover,
+    .navbar .dropdown ul li:hover>a {
+        color: #1977cc;
+    }
+
+    .navbar .dropdown:hover>ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+
+    .navbar .dropdown .dropdown ul {
+        top: 0;
+        left: calc(100% - 30px);
+        visibility: hidden;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+        opacity: 1;
+        top: 0;
+        left: 100%;
+        visibility: visible;
+    }
+
+    @media (max-width: 1366px) {
+        .navbar .dropdown .dropdown ul {
+            left: -90%;
+        }
+
+        .navbar .dropdown .dropdown:hover>ul {
+            left: -100%;
+        }
+    }
+
+    /**
+* Mobile Navigation 
+*/
+    .mobile-nav-toggle {
+        color: #2c4964;
+        font-size: 28px;
+        cursor: pointer;
+        display: none;
+        line-height: 0;
+        transition: 0.5s;
+    }
+
+    .mobile-nav-toggle.bi-x {
+        color: #fff;
+    }
+
+    @media (max-width: 991px) {
+        .mobile-nav-toggle {
+            display: block;
+        }
+
+        .navbar ul {
+            display: none;
+        }
+    }
+
+    .navbar-mobile {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(28, 47, 65, 0.9);
+        transition: 0.3s;
+        z-index: 999;
+    }
+
+    .navbar-mobile .mobile-nav-toggle {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .navbar-mobile ul {
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 0;
+        background-color: #fff;
+        overflow-y: auto;
+        transition: 0.3s;
+    }
+
+    .navbar-mobile>ul>li {
+        padding: 0;
+    }
+
+    .navbar-mobile a,
+    .navbar-mobile a:focus {
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #2c4964;
+        border: none;
+    }
+
+    .navbar-mobile a:hover,
+    .navbar-mobile .active,
+    .navbar-mobile li:hover>a {
+        color: #1977cc;
+    }
+
+    .navbar-mobile .getstarted,
+    .navbar-mobile .getstarted:focus {
+        margin: 15px;
+    }
+
+    .navbar-mobile .dropdown ul {
+        position: static;
+        display: none;
+        margin: 10px 20px;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 1;
+        visibility: visible;
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    }
+
+    .navbar-mobile .dropdown ul li {
+        min-width: 200px;
+    }
+
+    .navbar-mobile .dropdown ul a {
+        padding: 10px 20px;
+    }
+
+    .navbar-mobile .dropdown ul a i {
+        font-size: 12px;
+    }
+
+    .navbar-mobile .dropdown ul a:hover,
+    .navbar-mobile .dropdown ul .active:hover,
+    .navbar-mobile .dropdown ul li:hover>a {
+        color: #1977cc;
+    }
+
+    .navbar-mobile .dropdown>.dropdown-active {
+        display: block;
+    }
+</style>
+
 <body>
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+                <i class="bi bi-phone"></i> +1 5589 55488 55
+            </div>
+            <div class="d-none d-lg-flex social-links align-items-center">
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="/">Medilab</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="/" class="logo me-auto"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <a href="{{ url_for('user.user_login')}}" class="appointment-btn scrollto"><span
+                    class="d-none d-md-inline">Bed
+                    Booking
+                    Slot</span>
+                Book Now</a>
+
+        </div>
+    </header>
+
+    <!-- End Header -->
+
 
     <div class="bg-image" style="background-image: url('../static/assets/img/hero-bg.jpg');
-                height: 100vh">
+                height: 90vh">
 
 
+        <br>
+        <br>
         <br>
         <br>
         <br>
         <div class="container mt-4 ">
-            <div class="display-4 text-center text-dark">Update Hospital Data</div>
-            <br />
+            <div class=" mycontainer1 display-6 text-center  ">Update Hospital Data</div>
             <br />
             <div class="row">
                 <div class="col-md-4"></div>
@@ -71,12 +708,30 @@
                             </form>
                         </div>
                     </div>
+                    <br>
+                    <br>
+                    <br>
                     <div class="col-md-4"></div>
                 </div>
 
             </div>
 
         </div>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+
+            <div class="container d-md-flex py-4">
+
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://bootstrapmade.com/">Vivek Bhawsar</a>
+                    </div>
+                </div>
+        </footer>
+        <!-- End Footer -->
 
 
 

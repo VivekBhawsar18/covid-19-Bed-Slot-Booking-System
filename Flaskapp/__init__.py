@@ -4,7 +4,6 @@ from config import MailConfig
 from Flaskapp.extensions import db , mail , login_manager
 from Flaskapp.models.hospital import *
 from Flaskapp.models.users import *
-# from Flaskapp.blueprints.hospital.views import table_name
 
 
 app = Flask(__name__)

@@ -58,8 +58,9 @@
                 <tr>
                     <th>Delete</th>
                     <th class="table-light">
-                        <li class="list-group-item"><a href="{{url_for('user.user_booking_delete')}}"><i
-                                    class="fas fa-trash-alt"></i></a> </i>
+                        <li class="list-group-item"><a href="{{url_for('user.user_booking_delete')}}"
+                                onclick="if (confirm('Delete bed slot booking?')){return true;}else{event.stopPropagation(); event.preventDefault();};">
+                                <i class="fas fa-trash-alt"></i></a> </i>
                     </th>
                 </tr>
 
