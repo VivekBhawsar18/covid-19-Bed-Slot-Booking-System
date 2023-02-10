@@ -4,11 +4,16 @@ from flask import Flask
 from config import Config 
 from config import MailConfig 
 # Importing extensions for the application such as database, email and login management
-from Flaskapp.extensions import db , mail , login_manager , session
+from Flaskapp.extensions import db , mail , login_manager , session 
 # Importing models for the hospital and users
 from Flaskapp.models.hospital import *
 from Flaskapp.models.users import *
 
+import logging
+
+logging.basicConfig(filename='app.log', level=logging.DEBUG,
+                    format='%(asctime)s:%(levelname)s:%(message)s')
+logger = logging.getLogger(__name__)
 
 # Creating a Flask application instance
 app = Flask(__name__)

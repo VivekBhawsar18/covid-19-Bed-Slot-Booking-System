@@ -5,17 +5,20 @@ from Flaskapp.models.hospital import *
 from config import AdminCred
 from flask_mail import Message
 from werkzeug.security import generate_password_hash
+from Flaskapp import  logger
 
 # Creating a blueprint object 'bp' to store the user related functionality
 bp = Blueprint('admin' , __name__ , static_folder='static' , template_folder='templates')
 
 var = AdminCred()
 
+
 # [ Admin login functionality ]
 @bp.route('/login' , methods=['POST' , 'GET'])
 def admin_login():
     # Check the request method
     if request.method == 'POST':
+        logger.debug("Request to homepage")
         # Get the username and password from the form
         username = request.form.get('username') 
         password = request.form.get('password')
