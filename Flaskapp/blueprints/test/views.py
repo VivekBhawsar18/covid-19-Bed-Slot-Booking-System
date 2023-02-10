@@ -3,6 +3,7 @@ from Flaskapp.models.test import Test
 from flask_mail import  Message
 from Flaskapp.extensions import mail
 from config import AdminCred
+import requests
 
 bp = Blueprint('test' , __name__ , template_folder='templates')
 
@@ -10,54 +11,41 @@ var = AdminCred()
 
 @bp.route('/')
 def index():
-    return "<h1>Index page of Test blueprint</h1>"
-
+    return render_template('testIndex.html')
 @bp.route('/dbcon')
 def db_con():
     try:
         data = Test.query.all()
-        return render_template('dbcon.html',names = data)
+        # return render_template('dbcon.html',names = data)
+        return '<h1>Database connection succesfull!!!</h1>'
 
     except Exception as e:
         return str(e)
 
-@bp.route('/send/email')
+@bp.route('/email' , methods = ['GET' , 'POST'])
 def send_email():
-    try:
-        msg = Message(
-                        'COVID CARE CENTER',
-                        sender = var.MAIL_SENDER,
-                        recipients = ['info.vivekbhawsar@gmail.com']
-                    )
-        msg.body = 'Hello Flask message sent from Flask-Mail'
-        # msg.html = "<b> COVID CARE CENTER </b>"
-        mail.send(msg)
-        return 'Mail Sent Check Your Inbox !!!'
+    if request.method == 'POST':
+        email = request.form.get('email')
+        try:
+            msg = Message(
+                            'TEST EMAIL',
+                            sender = var.MAIL_SENDER,
+                            recipients = [email]
+                        )
+            msg.body = 'Hello user message sent from Flask-Mail'
+            mail.send(msg)
+            return '<h1>Mail Sent Check Your Inbox !!!</h1>'
 
-    except Exception as e:
-        return str(e)
-
-# @bp.context_processor
-# def context_processor(value):
-#     return dict(key=value , hello='how')
-
-# @bp.route('/session')
-# def test_session():
-#     try:
-#         session['email'] = 'vivekcoder18' 
-#         email = session['email']
-#         return str(context_processor('hello'))
-
-#     except Exception as e:
-#         return str(e)
+        except Exception as e:
+            return str(e)
+        
+    return render_template('emailTest.html')
 
 
 
-# @bp.route('/sumit/test' , mehtods=['GET' , 'POST'])
-# def test_sb():
+@bp.route('/covid')
+def covid():
+    # Get COVID-19 patient data using the requests library
+    data = requests.get("https://api.covidtracking.com/v1/states/current.json").json()
 
-#     if request.method=="POST":
-#         return"this is post method"
-
-#     return "this is get method"
-    # return "This is get method"
+    return render_template('covid.html', data=data)

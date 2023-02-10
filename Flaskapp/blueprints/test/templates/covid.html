@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>COVID-19 Data</title>
+</head>
+
+<body>
+    <h1>COVID-19 Patient Data</h1>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>New Confirmed</th>
+            <th>Total Confirmed</th>
+            <th>New Deaths</th>
+            <th>Total Deaths</th>
+            <th>New Recovered</th>
+            <th>Total Recovered</th>
+        </tr>
+        {% for country_data in data["Countries"] %}
+        <tr>
+            <td>{{ country_data["Country"] }}</td>
+            <td>{{ country_data["NewConfirmed"] }}</td>
+            <td>{{ country_data["TotalConfirmed"] }}</td>
+            <td>{{ country_data["NewDeaths"] }}</td>
+            <td>{{ country_data["TotalDeaths"] }}</td>
+            <td>{{ country_data["NewRecovered"] }}</td>
+            <td>{{ country_data["TotalRecovered"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

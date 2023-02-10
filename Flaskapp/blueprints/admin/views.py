@@ -27,7 +27,7 @@ def admin_login():
         # Check if the entered username and password match the expected values
         if ( username==admin_name and password==admin_pwd ):
             # Login success, show success message and redirect to the dashboard
-            flash("login success","success")
+            # flash("login success","success")
             session['user'] = admin_name
             return redirect(url_for('admin.admin_dashboard'))
 
