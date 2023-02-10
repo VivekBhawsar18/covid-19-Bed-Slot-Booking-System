@@ -138,6 +138,7 @@ def user_signup():
         mail.send(msg)
 
         # Save the user input data to the session
+        session['data'] = 'secure_data'
         session['name']=name
         session['contact']=contact
         session['email']=email

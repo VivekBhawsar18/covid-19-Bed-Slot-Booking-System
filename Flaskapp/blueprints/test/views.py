@@ -41,11 +41,3 @@ def send_email():
         
     return render_template('emailTest.html')
 
-
-
-@bp.route('/covid')
-def covid():
-    # Get COVID-19 patient data using the requests library
-    data = requests.get("https://api.covidtracking.com/v1/states/current.json").json()
-
-    return render_template('covid.html', data=data)

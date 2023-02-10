@@ -4,7 +4,7 @@ from flask import Flask
 from config import Config 
 from config import MailConfig 
 # Importing extensions for the application such as database, email and login management
-from Flaskapp.extensions import db , mail , login_manager
+from Flaskapp.extensions import db , mail , login_manager , session
 # Importing models for the hospital and users
 from Flaskapp.models.hospital import *
 from Flaskapp.models.users import *
@@ -21,7 +21,7 @@ app = Flask(__name__)
 # The MailConfig class contains the configuration details for the email service
 app.config.from_object(Config)
 app.config.from_object(MailConfig)
-
+app.config['SESSION_TYPE'] = 'filesystem'
 
 # Initializing extensions for the Flask application
 
@@ -31,6 +31,8 @@ db.init_app(app)
 mail.init_app(app)
 # The login management extension is initialized
 login_manager.init_app(app)
+# The session management extension is initialized
+session.init_app(app)
 # Setting the login view for the application
 login_manager.login_view = 'home.index'
 # Setting the message category for the login messages in the application
