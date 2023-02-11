@@ -1,6 +1,6 @@
 '''This code imports the necessary libraries and creates a blueprint for the user functionality.'''
 from flask import Blueprint, flash , render_template , request , redirect , url_for , session
-from Flaskapp.extensions import db , mail
+from Flaskapp.extensions import db , mail 
 from Flaskapp.models.hospital import *
 from config import AdminCred
 from flask_mail import Message

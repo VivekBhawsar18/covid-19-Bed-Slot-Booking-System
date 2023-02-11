@@ -10,10 +10,25 @@ from Flaskapp.models.hospital import *
 from Flaskapp.models.users import *
 
 import logging
+import sentry_sdk
+from sentry_sdk.integrations.flask import FlaskIntegration
+
 
 logging.basicConfig(filename='app.log', level=logging.DEBUG,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 logger = logging.getLogger(__name__)
+
+sentry_sdk.init(
+    dsn="https://86bdac5970d94915bf25623282ca4592@o4504660581482496.ingest.sentry.io/4504660582924288",
+    integrations=[
+        FlaskIntegration(),
+    ],
+
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    # We recommend adjusting this value in production.
+    traces_sample_rate=1.0
+)
 
 # Creating a Flask application instance
 app = Flask(__name__)

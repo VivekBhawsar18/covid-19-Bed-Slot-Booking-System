@@ -1,0 +1,832 @@
+2023-02-11 14:29:01,232:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-11 14:29:01,232:INFO:[33mPress CTRL+C to quit[0m
+2023-02-11 14:29:01,240:INFO: * Restarting with stat
+2023-02-11 14:29:10,932:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-11 14:29:10,932:INFO:[33mPress CTRL+C to quit[0m
+2023-02-11 14:29:10,940:INFO: * Restarting with stat
+2023-02-11 14:29:14,057:WARNING: * Debugger is active!
+2023-02-11 14:29:14,097:INFO: * Debugger PIN: 121-045-269
+2023-02-11 14:29:28,455:INFO:127.0.0.1 - - [11/Feb/2023 14:29:28] "GET / HTTP/1.1" 200 -
+2023-02-11 14:29:28,463:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-02-11 14:29:28,743:INFO:127.0.0.1 - - [11/Feb/2023 14:29:28] "[36mGET /static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:28,775:INFO:127.0.0.1 - - [11/Feb/2023 14:29:28] "[36mGET /static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:28,980:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:29,052:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,060:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,068:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,147:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:29,164:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,204:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,292:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,308:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:29,428:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,444:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,476:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:29,548:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,612:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,636:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:29,747:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,803:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:29,931:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[33mGET /static/assets/img/logo.png HTTP/1.1[0m" 404 -
+2023-02-11 14:29:29,948:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,956:INFO:127.0.0.1 - - [11/Feb/2023 14:29:29] "[36mGET /static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:29:29,972:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:30,052:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,075:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/departments-1.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,140:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:30,220:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/departments-2.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,300:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:30,428:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/departments-3.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,444:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,484:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:30,540:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,580:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,620:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,652:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:30,676:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,812:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/departments-4.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,820:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:30,852:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/departments-5.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,900:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/doctors/doctors-1.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,948:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/doctors/doctors-2.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,980:INFO:127.0.0.1 - - [11/Feb/2023 14:29:30] "[36mGET /static/assets/img/doctors/doctors-3.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:30,980:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:31,060:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/doctors/doctors-4.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,140:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:31,196:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/testimonials/testimonials-1.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,228:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/testimonials/testimonials-2.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,276:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/testimonials/testimonials-3.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,308:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:31,332:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/testimonials/testimonials-4.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,348:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/testimonials/testimonials-5.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,476:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:31,476:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/gallery/gallery-1.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,548:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/gallery/gallery-2.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,596:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/gallery/gallery-3.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,636:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/gallery/gallery-4.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,636:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:31,684:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/gallery/gallery-5.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,700:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/gallery/gallery-6.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,812:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:31,860:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/gallery/gallery-7.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,908:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/gallery/gallery-8.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,948:INFO:127.0.0.1 - - [11/Feb/2023 14:29:31] "[36mGET /static/assets/img/about.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:29:31,980:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:32,140:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:32,300:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:32,380:INFO:127.0.0.1 - - [11/Feb/2023 14:29:32] "GET /static/assets/img/favicon.png HTTP/1.1" 200 -
+2023-02-11 14:29:32,468:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:32,636:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:32,804:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:32,961:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:33,129:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:33,292:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:33,468:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:33,627:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:33,792:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:33,956:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:34,124:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:34,282:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:34,458:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:34,618:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:34,786:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:34,946:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:35,110:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:35,286:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:35,446:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:35,615:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:35,777:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:35,945:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:36,109:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:36,229:INFO:127.0.0.1 - - [11/Feb/2023 14:29:36] "[33mGET /debug-sentry HTTP/1.1[0m" 404 -
+2023-02-11 14:29:36,269:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:36,445:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:36,613:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:36,637:INFO:127.0.0.1 - - [11/Feb/2023 14:29:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-02-11 14:29:36,778:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:29:36,948:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:30:13,554:INFO:127.0.0.1 - - [11/Feb/2023 14:30:13] "[33mGET /debug-sentry HTTP/1.1[0m" 404 -
+2023-02-11 14:30:13,722:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:30:28,637:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:32:46,452:INFO:127.0.0.1 - - [11/Feb/2023 14:32:46] "[35m[1mGET /test/debug-sentry HTTP/1.1[0m" 500 -
+2023-02-11 14:32:46,556:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-02-11 14:32:46,716:INFO:127.0.0.1 - - [11/Feb/2023 14:32:46] "GET /test/debug-sentry?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-02-11 14:32:46,732:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:32:46,756:INFO:127.0.0.1 - - [11/Feb/2023 14:32:46] "GET /test/debug-sentry?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-02-11 14:32:46,900:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:32:47,202:INFO:127.0.0.1 - - [11/Feb/2023 14:32:47] "GET /test/debug-sentry?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-02-11 14:32:47,458:INFO:127.0.0.1 - - [11/Feb/2023 14:32:47] "[36mGET /test/debug-sentry?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-11 14:33:20,494:INFO:127.0.0.1 - - [11/Feb/2023 14:33:20] "GET /admin/login HTTP/1.1" 200 -
+2023-02-11 14:33:20,654:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:20,918:INFO:127.0.0.1 - - [11/Feb/2023 14:33:20] "GET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,086:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:21,182:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,206:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,214:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,222:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,246:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,342:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,350:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:21,510:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:21,614:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,630:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/css/v-style.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,638:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/css/style.css HTTP/1.1" 200 -
+2023-02-11 14:33:21,646:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1" 200 -
+2023-02-11 14:33:21,670:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:21,718:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/js/v-main.js HTTP/1.1" 200 -
+2023-02-11 14:33:21,838:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:21,846:INFO:127.0.0.1 - - [11/Feb/2023 14:33:21] "GET /admin/static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 -
+2023-02-11 14:33:22,014:INFO:127.0.0.1 - - [11/Feb/2023 14:33:22] "GET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1" 200 -
+2023-02-11 14:33:22,022:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:22,190:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:22,270:INFO:127.0.0.1 - - [11/Feb/2023 14:33:22] "GET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1" 200 -
+2023-02-11 14:33:22,310:INFO:127.0.0.1 - - [11/Feb/2023 14:33:22] "GET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2023-02-11 14:33:22,310:INFO:127.0.0.1 - - [11/Feb/2023 14:33:22] "GET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 -
+2023-02-11 14:33:22,358:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:22,398:INFO:127.0.0.1 - - [11/Feb/2023 14:33:22] "GET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 -
+2023-02-11 14:33:22,430:INFO:127.0.0.1 - - [11/Feb/2023 14:33:22] "GET /admin/static/assets/js/main.js HTTP/1.1" 200 -
+2023-02-11 14:33:22,502:INFO:127.0.0.1 - - [11/Feb/2023 14:33:22] "GET /admin/static/assets/img/hero-bg.jpg HTTP/1.1" 200 -
+2023-02-11 14:33:22,534:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:22,694:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:22,862:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:23,038:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:23,078:INFO:127.0.0.1 - - [11/Feb/2023 14:33:23] "GET /admin/static/assets/img/favicon.png HTTP/1.1" 200 -
+2023-02-11 14:33:23,198:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:23,366:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:23,534:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:23,694:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:23,862:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:24,030:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:24,198:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:24,357:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:24,525:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:28,657:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:33:29,232:DEBUG:Request to homepage
+2023-02-11 14:33:29,240:INFO:127.0.0.1 - - [11/Feb/2023 14:33:29] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2023-02-11 14:33:29,408:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:29,584:INFO:127.0.0.1 - - [11/Feb/2023 14:33:29] "GET /admin/dashboard HTTP/1.1" 200 -
+2023-02-11 14:33:29,744:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:30,080:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,096:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,112:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,112:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,120:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,136:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,256:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:30,416:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:30,440:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,496:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,504:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,512:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,520:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,528:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,584:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:30,744:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:30,816:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "GET /admin/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2023-02-11 14:33:30,856:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,904:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:30,904:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,928:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,936:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:33:30,968:INFO:127.0.0.1 - - [11/Feb/2023 14:33:30] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:33:31,080:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:31,184:INFO:127.0.0.1 - - [11/Feb/2023 14:33:31] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:33:31,240:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:31,416:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:31,584:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:31,744:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:31,912:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:32,080:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:32,240:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:32,408:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:32,568:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:32,736:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:32,896:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:33,064:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:33:33,224:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:00,264:INFO:127.0.0.1 - - [11/Feb/2023 14:34:00] "[32mGET /admin/logout HTTP/1.1[0m" 302 -
+2023-02-11 14:34:00,328:INFO:127.0.0.1 - - [11/Feb/2023 14:34:00] "GET /admin/login HTTP/1.1" 200 -
+2023-02-11 14:34:00,424:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:00,592:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:00,640:INFO:127.0.0.1 - - [11/Feb/2023 14:34:00] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:00,800:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:00,936:INFO:127.0.0.1 - - [11/Feb/2023 14:34:00] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:00,960:INFO:127.0.0.1 - - [11/Feb/2023 14:34:00] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:00,984:INFO:127.0.0.1 - - [11/Feb/2023 14:34:00] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,000:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,008:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,008:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,112:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:01,272:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:01,288:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,376:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,384:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,400:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,416:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,424:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,440:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:01,616:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:01,640:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,768:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,784:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:01,792:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,808:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,888:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,896:INFO:127.0.0.1 - - [11/Feb/2023 14:34:01] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:01,944:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:02,016:INFO:127.0.0.1 - - [11/Feb/2023 14:34:02] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:34:02,112:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:02,280:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:02,440:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:02,608:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:02,776:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:02,944:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:03,112:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:03,272:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:03,440:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:03,600:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:03,777:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:03,937:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:04,105:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:07,935:DEBUG:Request to homepage
+2023-02-11 14:34:07,943:INFO:127.0.0.1 - - [11/Feb/2023 14:34:07] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2023-02-11 14:34:08,007:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "GET /admin/login HTTP/1.1" 200 -
+2023-02-11 14:34:08,119:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:08,279:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:08,319:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,479:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:08,527:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,567:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,567:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,591:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,591:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,655:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,703:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:08,871:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:08,887:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,959:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,975:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:08,983:INFO:127.0.0.1 - - [11/Feb/2023 14:34:08] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:34:09,015:INFO:127.0.0.1 - - [11/Feb/2023 14:34:09] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:09,031:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:09,055:INFO:127.0.0.1 - - [11/Feb/2023 14:34:09] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:09,207:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:09,239:INFO:127.0.0.1 - - [11/Feb/2023 14:34:09] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:09,303:INFO:127.0.0.1 - - [11/Feb/2023 14:34:09] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:09,327:INFO:127.0.0.1 - - [11/Feb/2023 14:34:09] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:09,335:INFO:127.0.0.1 - - [11/Feb/2023 14:34:09] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:34:09,367:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:09,431:INFO:127.0.0.1 - - [11/Feb/2023 14:34:09] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:34:09,527:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:09,695:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:09,855:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:10,023:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:10,191:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:10,359:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:10,519:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:10,679:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:10,847:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:11,007:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:11,175:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:11,335:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:34:28,665:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:35:53,191:INFO: * Detected change in 'D:\\office_dell_laptop\\Learning\\fyndTraining\\01_fynd_project\\covid-19-Bed-Slot-Booking-System\\Flaskapp\\blueprints\\admin\\views.py', reloading
+2023-02-11 14:35:53,655:INFO: * Restarting with stat
+2023-02-11 14:35:57,161:WARNING: * Debugger is active!
+2023-02-11 14:35:57,193:INFO: * Debugger PIN: 121-045-269
+2023-02-11 14:35:59,313:INFO:127.0.0.1 - - [11/Feb/2023 14:35:59] "GET /admin/login HTTP/1.1" 200 -
+2023-02-11 14:35:59,321:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-02-11 14:35:59,657:INFO:127.0.0.1 - - [11/Feb/2023 14:35:59] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:35:59,657:INFO:127.0.0.1 - - [11/Feb/2023 14:35:59] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:35:59,817:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:35:59,897:INFO:127.0.0.1 - - [11/Feb/2023 14:35:59] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:35:59,905:INFO:127.0.0.1 - - [11/Feb/2023 14:35:59] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:35:59,913:INFO:127.0.0.1 - - [11/Feb/2023 14:35:59] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:35:59,921:INFO:127.0.0.1 - - [11/Feb/2023 14:35:59] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:35:59,985:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:00,033:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,041:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,153:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:00,265:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,281:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,289:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,296:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,321:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:00,393:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,401:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,489:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:00,593:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,633:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,641:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,656:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:00,785:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,793:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,801:INFO:127.0.0.1 - - [11/Feb/2023 14:36:00] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:36:00,824:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:00,993:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:01,153:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:01,201:INFO:127.0.0.1 - - [11/Feb/2023 14:36:01] "[36mGET /admin/static/assets/img/favicon.png HTTP/1.1[0m" 304 -
+2023-02-11 14:36:01,321:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:01,496:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:01,664:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:01,833:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:02,001:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:02,169:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:02,337:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:02,505:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:02,673:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:02,841:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:03,009:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:03,177:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:03,353:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:04,913:DEBUG:Request to homepage
+2023-02-11 14:36:05,369:INFO:127.0.0.1 - - [11/Feb/2023 14:36:05] "[35m[1mPOST /admin/login HTTP/1.1[0m" 500 -
+2023-02-11 14:36:05,481:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-02-11 14:36:05,489:INFO:127.0.0.1 - - [11/Feb/2023 14:36:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-02-11 14:36:05,648:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:36:05,801:INFO:127.0.0.1 - - [11/Feb/2023 14:36:05] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-02-11 14:36:06,233:INFO:127.0.0.1 - - [11/Feb/2023 14:36:06] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-02-11 14:36:06,505:INFO:127.0.0.1 - - [11/Feb/2023 14:36:06] "[36mGET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-11 14:36:40,475:INFO: * Detected change in 'D:\\office_dell_laptop\\Learning\\fyndTraining\\01_fynd_project\\covid-19-Bed-Slot-Booking-System\\Flaskapp\\blueprints\\admin\\views.py', reloading
+2023-02-11 14:36:40,643:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:36:40,971:INFO: * Restarting with stat
+2023-02-11 14:36:45,435:WARNING: * Debugger is active!
+2023-02-11 14:36:45,483:INFO: * Debugger PIN: 121-045-269
+2023-02-11 14:37:19,385:DEBUG:Request to homepage
+2023-02-11 14:37:19,399:INFO:127.0.0.1 - - [11/Feb/2023 14:37:19] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2023-02-11 14:37:19,401:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-02-11 14:37:19,495:INFO:127.0.0.1 - - [11/Feb/2023 14:37:19] "GET /admin/dashboard HTTP/1.1" 200 -
+2023-02-11 14:37:19,688:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:19,856:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:20,022:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,029:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,040:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,078:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,090:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,097:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,194:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:20,358:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:20,381:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,389:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,400:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,452:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,458:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,466:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,528:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:20,696:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:20,746:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,802:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,813:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,828:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,836:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:37:20,862:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:20,921:INFO:127.0.0.1 - - [11/Feb/2023 14:37:20] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:37:21,038:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:21,109:INFO:127.0.0.1 - - [11/Feb/2023 14:37:21] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:37:21,206:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:21,373:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:21,537:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:21,701:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:21,868:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:22,033:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:22,198:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:22,364:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:22,532:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:22,697:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:22,865:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:23,030:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:23,197:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:27,733:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-02-11 14:37:27,853:INFO:127.0.0.1 - - [11/Feb/2023 14:37:27] "[35m[1mGET /admin/userBookings HTTP/1.1[0m" 500 -
+2023-02-11 14:37:27,899:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:37:28,041:INFO:127.0.0.1 - - [11/Feb/2023 14:37:28] "GET /admin/userBookings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-02-11 14:37:28,043:INFO:127.0.0.1 - - [11/Feb/2023 14:37:28] "GET /admin/userBookings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-02-11 14:37:28,663:INFO:127.0.0.1 - - [11/Feb/2023 14:37:28] "GET /admin/userBookings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-02-11 14:37:28,932:INFO:127.0.0.1 - - [11/Feb/2023 14:37:28] "[36mGET /admin/userBookings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-11 14:38:19,569:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:38:33,692:INFO:127.0.0.1 - - [11/Feb/2023 14:38:33] "[32mGET /admin/logout HTTP/1.1[0m" 302 -
+2023-02-11 14:38:33,780:INFO:127.0.0.1 - - [11/Feb/2023 14:38:33] "GET /admin/login HTTP/1.1" 200 -
+2023-02-11 14:38:33,861:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:34,037:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:34,338:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,348:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,360:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,366:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,367:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,373:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,504:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:34,669:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:34,707:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,707:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,756:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,758:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,776:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,788:INFO:127.0.0.1 - - [11/Feb/2023 14:38:34] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:34,848:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:35,015:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:35,104:INFO:127.0.0.1 - - [11/Feb/2023 14:38:35] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:38:35,106:INFO:127.0.0.1 - - [11/Feb/2023 14:38:35] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:38:35,190:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:35,204:INFO:127.0.0.1 - - [11/Feb/2023 14:38:35] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:38:35,218:INFO:127.0.0.1 - - [11/Feb/2023 14:38:35] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:38:35,353:INFO:127.0.0.1 - - [11/Feb/2023 14:38:35] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:38:35,369:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:35,471:INFO:127.0.0.1 - - [11/Feb/2023 14:38:35] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:38:35,537:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:35,567:INFO:127.0.0.1 - - [11/Feb/2023 14:38:35] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:38:35,575:INFO:127.0.0.1 - - [11/Feb/2023 14:38:35] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:38:35,724:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:35,894:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:36,061:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:36,225:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:36,391:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:36,558:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:36,721:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:36,885:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:37,052:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:37,221:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:37,394:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:37,560:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:37,727:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:55,678:INFO:127.0.0.1 - - [11/Feb/2023 14:38:55] "[35m[1mGET /test/debug-sentry HTTP/1.1[0m" 500 -
+2023-02-11 14:38:55,801:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-02-11 14:38:55,951:INFO:127.0.0.1 - - [11/Feb/2023 14:38:55] "[36mGET /test/debug-sentry?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:38:55,988:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:38:55,994:INFO:127.0.0.1 - - [11/Feb/2023 14:38:55] "[36mGET /test/debug-sentry?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-02-11 14:38:56,543:INFO:127.0.0.1 - - [11/Feb/2023 14:38:56] "[36mGET /test/debug-sentry?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-11 14:39:19,573:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:39:58,586:DEBUG:Request to homepage
+2023-02-11 14:39:58,595:INFO:127.0.0.1 - - [11/Feb/2023 14:39:58] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2023-02-11 14:39:58,762:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:39:58,915:INFO:127.0.0.1 - - [11/Feb/2023 14:39:58] "GET /admin/login HTTP/1.1" 200 -
+2023-02-11 14:39:59,080:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:39:59,379:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,390:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,391:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,396:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,405:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,412:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,573:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:39:59,739:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:39:59,772:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,778:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,785:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,793:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,802:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,810:INFO:127.0.0.1 - - [11/Feb/2023 14:39:59] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:39:59,915:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:00,080:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:00,129:INFO:127.0.0.1 - - [11/Feb/2023 14:40:00] "[36mGET /admin/static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:40:00,179:INFO:127.0.0.1 - - [11/Feb/2023 14:40:00] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:40:00,207:INFO:127.0.0.1 - - [11/Feb/2023 14:40:00] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:40:00,217:INFO:127.0.0.1 - - [11/Feb/2023 14:40:00] "[36mGET /admin/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:40:00,227:INFO:127.0.0.1 - - [11/Feb/2023 14:40:00] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:40:00,248:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:00,279:INFO:127.0.0.1 - - [11/Feb/2023 14:40:00] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:40:00,417:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:00,470:INFO:127.0.0.1 - - [11/Feb/2023 14:40:00] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:40:00,504:INFO:127.0.0.1 - - [11/Feb/2023 14:40:00] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:40:00,582:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:00,748:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:00,914:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:01,079:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:01,244:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:01,409:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:01,577:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:01,743:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:01,907:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:02,074:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:02,243:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:02,408:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:02,573:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:02,739:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:40:19,586:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:46:35,621:INFO: * Detected change in 'D:\\office_dell_laptop\\Learning\\fyndTraining\\01_fynd_project\\covid-19-Bed-Slot-Booking-System\\Flaskapp\\blueprints\\admin\\views.py', reloading
+2023-02-11 14:46:35,856:INFO: * Restarting with stat
+2023-02-11 14:46:39,200:WARNING: * Debugger is active!
+2023-02-11 14:46:39,241:INFO: * Debugger PIN: 121-045-269
+2023-02-11 14:48:55,852:DEBUG:Request to homepage
+2023-02-11 14:48:55,870:INFO:127.0.0.1 - - [11/Feb/2023 14:48:55] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2023-02-11 14:48:55,871:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-02-11 14:48:55,968:INFO:127.0.0.1 - - [11/Feb/2023 14:48:55] "GET /admin/dashboard HTTP/1.1" 200 -
+2023-02-11 14:48:56,195:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,244:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:56,425:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:56,514:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,526:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,534:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,559:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,584:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,593:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:56,594:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,764:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:56,861:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,867:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,896:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,935:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:56,942:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,947:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:48:56,958:INFO:127.0.0.1 - - [11/Feb/2023 14:48:56] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:48:57,124:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:57,183:INFO:127.0.0.1 - - [11/Feb/2023 14:48:57] "[36mGET /admin/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:48:57,215:INFO:127.0.0.1 - - [11/Feb/2023 14:48:57] "[36mGET /admin/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:48:57,240:INFO:127.0.0.1 - - [11/Feb/2023 14:48:57] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:48:57,281:INFO:127.0.0.1 - - [11/Feb/2023 14:48:57] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:48:57,296:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:57,357:INFO:127.0.0.1 - - [11/Feb/2023 14:48:57] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:48:57,449:INFO:127.0.0.1 - - [11/Feb/2023 14:48:57] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:48:57,477:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:57,508:INFO:127.0.0.1 - - [11/Feb/2023 14:48:57] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:48:57,644:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:57,814:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:57,981:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:58,146:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:58,315:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:58,490:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:58,662:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:58,831:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:58,999:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:59,166:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:59,342:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:59,511:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:59,684:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:48:59,851:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:00,924:INFO:127.0.0.1 - - [11/Feb/2023 14:49:00] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:00,937:INFO:127.0.0.1 - - [11/Feb/2023 14:49:00] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:00,938:INFO:127.0.0.1 - - [11/Feb/2023 14:49:00] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:00,950:INFO:127.0.0.1 - - [11/Feb/2023 14:49:00] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:00,988:INFO:127.0.0.1 - - [11/Feb/2023 14:49:00] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:01,042:INFO:127.0.0.1 - - [11/Feb/2023 14:49:01] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:01,116:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:01,279:INFO:127.0.0.1 - - [11/Feb/2023 14:49:01] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:01,285:INFO:127.0.0.1 - - [11/Feb/2023 14:49:01] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:01,291:INFO:127.0.0.1 - - [11/Feb/2023 14:49:01] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:01,294:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:01,331:INFO:127.0.0.1 - - [11/Feb/2023 14:49:01] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:49:01,340:INFO:127.0.0.1 - - [11/Feb/2023 14:49:01] "[33mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js.map HTTP/1.1[0m" 404 -
+2023-02-11 14:49:01,403:INFO:127.0.0.1 - - [11/Feb/2023 14:49:01] "GET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2023-02-11 14:49:01,471:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:01,637:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:01,709:INFO:127.0.0.1 - - [11/Feb/2023 14:49:01] "GET /admin/static/assets/vendor/swiper/swiper-bundle.min.js.map HTTP/1.1" 200 -
+2023-02-11 14:49:01,834:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:02,014:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:02,026:INFO:127.0.0.1 - - [11/Feb/2023 14:49:02] "GET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+2023-02-11 14:49:02,186:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:02,352:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:02,523:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:02,692:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:02,860:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:03,026:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:03,196:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:03,362:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:49:56,041:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:51:42,160:INFO: * Detected change in 'D:\\office_dell_laptop\\Learning\\fyndTraining\\01_fynd_project\\covid-19-Bed-Slot-Booking-System\\Flaskapp\\blueprints\\admin\\views.py', reloading
+2023-02-11 14:51:42,348:INFO: * Restarting with stat
+2023-02-11 14:51:45,552:WARNING: * Debugger is active!
+2023-02-11 14:51:45,573:INFO: * Debugger PIN: 121-045-269
+2023-02-11 14:51:47,801:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-02-11 14:51:47,868:INFO:127.0.0.1 - - [11/Feb/2023 14:51:47] "[35m[1mGET /admin/logout HTTP/1.1[0m" 500 -
+2023-02-11 14:51:47,974:INFO:127.0.0.1 - - [11/Feb/2023 14:51:47] "GET /admin/logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-02-11 14:51:47,978:INFO:127.0.0.1 - - [11/Feb/2023 14:51:47] "GET /admin/logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-02-11 14:51:48,066:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-02-11 14:51:48,229:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:51:48,494:INFO:127.0.0.1 - - [11/Feb/2023 14:51:48] "GET /admin/logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-02-11 14:51:48,737:INFO:127.0.0.1 - - [11/Feb/2023 14:51:48] "[36mGET /admin/logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-11 14:52:08,410:INFO:127.0.0.1 - - [11/Feb/2023 14:52:08] "GET / HTTP/1.1" 200 -
+2023-02-11 14:52:08,575:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:08,658:INFO:127.0.0.1 - - [11/Feb/2023 14:52:08] "[36mGET /static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:08,823:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:08,872:INFO:127.0.0.1 - - [11/Feb/2023 14:52:08] "[36mGET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:08,881:INFO:127.0.0.1 - - [11/Feb/2023 14:52:08] "[36mGET /static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:08,900:INFO:127.0.0.1 - - [11/Feb/2023 14:52:08] "[36mGET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:08,928:INFO:127.0.0.1 - - [11/Feb/2023 14:52:08] "[36mGET /static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:08,943:INFO:127.0.0.1 - - [11/Feb/2023 14:52:08] "[36mGET /static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:08,998:INFO:127.0.0.1 - - [11/Feb/2023 14:52:08] "[36mGET /static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,039:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:09,203:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,204:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:09,243:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,254:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,298:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,304:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,360:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,373:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:09,542:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,545:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:09,585:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,608:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,649:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[33mGET /static/assets/img/logo.png HTTP/1.1[0m" 404 -
+2023-02-11 14:52:09,673:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/img/departments-1.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,703:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/img/departments-2.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,710:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:09,875:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:09,917:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,951:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,957:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:52:09,982:INFO:127.0.0.1 - - [11/Feb/2023 14:52:09] "[36mGET /static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,008:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,046:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:10,046:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/departments-3.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,214:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:10,253:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/departments-4.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,283:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/doctors/doctors-1.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,293:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/departments-5.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,338:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/doctors/doctors-3.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,344:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/doctors/doctors-2.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,382:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/doctors/doctors-4.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,384:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:10,546:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:10,594:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/testimonials/testimonials-1.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,644:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/testimonials/testimonials-2.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,650:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/testimonials/testimonials-3.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,698:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/testimonials/testimonials-4.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,703:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/testimonials/testimonials-5.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,710:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:10,753:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/gallery/gallery-1.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,873:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:10,933:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/gallery/gallery-2.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,983:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/gallery/gallery-3.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:10,988:INFO:127.0.0.1 - - [11/Feb/2023 14:52:10] "[36mGET /static/assets/img/gallery/gallery-4.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:11,036:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:11,049:INFO:127.0.0.1 - - [11/Feb/2023 14:52:11] "[36mGET /static/assets/img/gallery/gallery-6.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:11,065:INFO:127.0.0.1 - - [11/Feb/2023 14:52:11] "[36mGET /static/assets/img/gallery/gallery-5.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:11,098:INFO:127.0.0.1 - - [11/Feb/2023 14:52:11] "[36mGET /static/assets/img/gallery/gallery-7.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:11,204:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:11,272:INFO:127.0.0.1 - - [11/Feb/2023 14:52:11] "[36mGET /static/assets/img/gallery/gallery-8.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:11,320:INFO:127.0.0.1 - - [11/Feb/2023 14:52:11] "[36mGET /static/assets/img/about.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:11,366:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:11,531:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:11,693:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:11,855:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:12,020:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:12,191:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:12,355:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:12,517:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:12,681:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:12,849:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:13,014:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:13,179:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:13,341:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:13,513:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:13,532:INFO:127.0.0.1 - - [11/Feb/2023 14:52:13] "GET /admin/login HTTP/1.1" 200 -
+2023-02-11 14:52:13,692:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:13,711:INFO:127.0.0.1 - - [11/Feb/2023 14:52:13] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:13,830:INFO:127.0.0.1 - - [11/Feb/2023 14:52:13] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:13,860:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:14,009:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,015:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,029:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:14,085:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,103:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,117:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,176:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,197:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:14,360:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:14,366:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,377:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,433:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,441:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,463:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,514:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,530:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:14,701:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:14,715:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,732:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,770:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,871:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:14,872:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,922:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:52:14,938:INFO:127.0.0.1 - - [11/Feb/2023 14:52:14] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:15,038:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:15,201:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:15,365:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:15,522:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:15,689:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:15,859:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:16,018:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:16,189:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:16,346:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:16,514:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:16,714:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:16,870:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:17,048:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:17,209:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:17,371:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:17,537:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:17,687:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:17,859:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:18,015:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:18,193:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:18,364:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:18,529:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:18,692:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:18,842:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:19,014:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:19,185:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:19,339:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:19,512:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:19,674:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:20,255:DEBUG:Request to homepage
+2023-02-11 14:52:20,312:INFO:127.0.0.1 - - [11/Feb/2023 14:52:20] "[35m[1mPOST /admin/login HTTP/1.1[0m" 500 -
+2023-02-11 14:52:20,433:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-02-11 14:52:20,445:INFO:127.0.0.1 - - [11/Feb/2023 14:52:20] "[36mGET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:52:20,516:INFO:127.0.0.1 - - [11/Feb/2023 14:52:20] "[36mGET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-02-11 14:52:20,597:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:52:20,856:INFO:127.0.0.1 - - [11/Feb/2023 14:52:20] "[36mGET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-11 14:52:21,126:INFO:127.0.0.1 - - [11/Feb/2023 14:52:21] "[36mGET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-11 14:52:47,982:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-02-11 14:53:24,139:INFO: * Detected change in 'D:\\office_dell_laptop\\Learning\\fyndTraining\\01_fynd_project\\covid-19-Bed-Slot-Booking-System\\Flaskapp\\blueprints\\admin\\views.py', reloading
+2023-02-11 14:53:24,362:INFO: * Restarting with stat
+2023-02-11 14:53:27,201:WARNING: * Debugger is active!
+2023-02-11 14:53:27,220:INFO: * Debugger PIN: 121-045-269
+2023-02-11 14:53:33,573:DEBUG:Request to homepage
+2023-02-11 14:53:33,587:INFO:127.0.0.1 - - [11/Feb/2023 14:53:33] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2023-02-11 14:53:33,589:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-02-11 14:53:33,672:INFO:127.0.0.1 - - [11/Feb/2023 14:53:33] "GET /admin/dashboard HTTP/1.1" 200 -
+2023-02-11 14:53:33,849:INFO:127.0.0.1 - - [11/Feb/2023 14:53:33] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:33,853:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:34,019:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:34,109:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,116:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,156:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,165:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,183:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:34,184:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,193:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,342:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:34,439:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,444:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,493:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,498:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,507:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:34,534:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,545:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,669:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:34,774:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,774:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,831:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:34,840:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,845:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,940:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,988:INFO:127.0.0.1 - - [11/Feb/2023 14:53:34] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:34,997:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:35,097:INFO:127.0.0.1 - - [11/Feb/2023 14:53:35] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:53:35,154:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:35,314:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:35,475:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:35,633:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:35,800:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:35,959:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:36,120:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:36,284:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:36,443:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:36,592:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:36,763:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:36,921:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:37,079:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:37,242:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:37,382:INFO:127.0.0.1 - - [11/Feb/2023 14:53:37] "[32mGET /admin/logout HTTP/1.1[0m" 302 -
+2023-02-11 14:53:37,490:INFO:127.0.0.1 - - [11/Feb/2023 14:53:37] "GET /admin/login HTTP/1.1" 200 -
+2023-02-11 14:53:37,542:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:37,692:INFO:127.0.0.1 - - [11/Feb/2023 14:53:37] "[36mGET /admin/static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:37,707:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:37,874:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:37,990:INFO:127.0.0.1 - - [11/Feb/2023 14:53:37] "[36mGET /admin/static/assets/vendor/animate.css/animate.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:37,997:INFO:127.0.0.1 - - [11/Feb/2023 14:53:37] "[36mGET /admin/static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,006:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,014:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,042:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,051:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/remixicon/remixicon.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,176:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:38,339:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:38,352:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/css/style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,364:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,369:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/js/v-main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,393:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/css/v-style.css HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,424:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,498:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:38,508:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,661:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:38,705:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,728:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,746:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,756:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,816:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/js/main.js HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,832:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:38,871:INFO:127.0.0.1 - - [11/Feb/2023 14:53:38] "[36mGET /admin/static/assets/img/hero-bg.jpg HTTP/1.1[0m" 304 -
+2023-02-11 14:53:38,993:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:39,152:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:39,311:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:39,473:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:39,627:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:39,789:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:39,951:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:40,110:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:40,271:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:40,427:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:40,583:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:40,739:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:53:40,911:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-02-11 14:54:33,757:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
