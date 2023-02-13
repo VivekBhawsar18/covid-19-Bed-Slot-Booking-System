@@ -2,6 +2,7 @@
 {% block title %} Hospital data {% endblock title %}
 
 {% block body %}
+
 <div class="containerI">
     <br>
     <br>
@@ -10,60 +11,78 @@
     <br>
     <br>
     <br>
-    <div class="container mt-3">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-12">
 
-        <table class="table table-dark">
-            <thead>
-                <h3 class="text-center text-white bg-dark">Available Beds</h3>
-                <tr>
+                <div class="row custom-height">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 text-center">
+                        <table class="table table-dark">
+                            <thead>
+                                <h3 class="text-center text-white bg-dark">Available Beds</h3>
+                                <tr>
 
-                    <th scope="col">Hospital Code</th>
-                    <th scope="col">Hospital Name</th>
-                    <th scope="col">Normal Bed</th>
-                    <th scope="col">HICU Bed</th>
-                    <th scope="col">I.C.U Bed</th>
-                    <th scope="col">Ventilator Bed</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for post in query %}
-                <tr>
-                    <td>{{post.hcode}}</td>
-                    <td>{{post.hname}}</td>
+                                    <th scope="col">Hospital Code</th>
+                                    <th scope="col">Hospital Name</th>
+                                    <th scope="col">Normal Bed</th>
+                                    <th scope="col">HICU Bed</th>
+                                    <th scope="col">I.C.U Bed</th>
+                                    <th scope="col">Ventilator Bed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for post in query %}
+                                <tr>
+                                    <td>{{post.hcode}}</td>
+                                    <td>{{post.hname}}</td>
 
-                    {% if post.normalbed >= 1 %}
-                    <td>{{post.normalbed}}</td>
-                    {% else %}
-                    <td>Not Available</td>
-                    {% endif %}
+                                    {% if post.normalbed >= 1 %}
+                                    <td>{{post.normalbed}}</td>
+                                    {% else %}
+                                    <td>Not Available</td>
+                                    {% endif %}
 
-                    {% if post.hicubed >= 1 %}
-                    <td>{{post.hicubed}}</td>
-                    {% else %}
-                    <td>Not Available</td>
-                    {% endif %}
+                                    {% if post.hicubed >= 1 %}
+                                    <td>{{post.hicubed}}</td>
+                                    {% else %}
+                                    <td>Not Available</td>
+                                    {% endif %}
 
-                    {% if post.icubed >= 1 %}
-                    <td>{{post.icubed}}</td>
-                    {% else %}
-                    <td>Not Available</td>
-                    {% endif %}
+                                    {% if post.icubed >= 1 %}
+                                    <td>{{post.icubed}}</td>
+                                    {% else %}
+                                    <td>Not Available</td>
+                                    {% endif %}
 
-                    {% if post.vbed >= 1 %}
-                    <td>{{post.vbed}}</td>
-                    {% else %}
-                    <td>Not Available</td>
-                    {% endif %}
+                                    {% if post.vbed >= 1 %}
+                                    <td>{{post.vbed}}</td>
+                                    {% else %}
+                                    <td>Not Available</td>
+                                    {% endif %}
 
-                </tr>
+                                </tr>
 
-                {% endfor %}
+                                {% endfor %}
+                            </tbody>
+                        </table>
 
-            </tbody>
-        </table>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
 
-    </div>
+                <!-- <div class=" mycontainer1 display-6 text-center  ">
+                    <a href="#" class="btn btn-dark mr-auto">Next</a>
+                    <a href="#" class="btn btn-dark ml-auto ">Previous</a>
+                </div> -->
+
+            </div>
+        </div>
+
+    </div> <!--container-fluid -->
+
 
 
 </div>
+
 {% endblock body %}

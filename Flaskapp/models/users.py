@@ -9,6 +9,7 @@ class User(UserMixin,db.Model):
     gender = db.Column(db.String(20))
     address = db.Column(db.String(100))
     password=db.Column(db.String(1000))
+    role = db.Column(db.String(80), nullable=False)
 
     def __str__(self) -> str:
         return f"{self.id}-{self.email}-{self.firstname}-{self.lastname}-{self.password}"

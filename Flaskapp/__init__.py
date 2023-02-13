@@ -64,13 +64,14 @@ login_manager.login_message_category = "info"
 # The function takes the user_id as an argument and returns the corresponding user object
 @login_manager.user_loader
 def user_load(user_id):
-        # Querying for the user with the given user_id from the User model
-        user = User.query.get(int(user_id))
-        if user:
+        
+        # Querying for the user in the Hospitaluser model
+        user = Hospitaluser.query.get(int(user_id))
+        if user and user.role == 'hospital':
                 # If a user is found, return it
                 return user
-        # If a user is not found in the User model, querying for the user in the Hospitaluser model
-        return Hospitaluser.query.get(int(user_id))
+        # If a user is not found in the Hospitaluser model, Querying for the user with the given user_id from the user model
+        return User.query.get(int(user_id))
 
 
 # Registering blueprints for the application

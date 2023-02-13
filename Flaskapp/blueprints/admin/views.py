@@ -5,12 +5,26 @@ from Flaskapp.models.hospital import *
 from config import AdminCred
 from flask_mail import Message
 from werkzeug.security import generate_password_hash
+from functools import wraps
+from flask_login import current_user, login_required
 from Flaskapp import  logger
 
 # Creating a blueprint object 'bp' to store the user related functionality
 bp = Blueprint('admin' , __name__ , static_folder='static' , template_folder='templates')
 
 var = AdminCred()
+
+# Check if the user is logged in and the username matches the expected value
+def admin_login_required(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        if 'user' in session and session['user']==var.ADMIN_NAME:
+            return func(*args, **kwargs)
+        else:
+            # User is not logged in, show error message and redirect to the login page
+            flash("Login and try Again","warning")
+            return redirect(url_for('admin.admin_login'))
+    return wrapper
 
 
 # [ Admin login functionality ]
@@ -45,24 +59,21 @@ def admin_login():
 
 # [ Admin dashboard ]
 @bp.route('/dashboard')
+@admin_login_required 
 def admin_dashboard():
-    
-    # Check if the user is logged in and the username matches the expected value
-    if 'user' in session and session['user']==var.ADMIN_NAME:
-        return render_template('adminDashboard.html') # User is logged in, show the dashboard
-    # User is not logged in, show error message and redirect to the login page
-    flash("Login and try Again","warning")
-    return redirect(url_for('admin.admin_login'))
+    return render_template('adminDashboard.html') # User is logged in, show the dashboard
+
 
 
 # Services 
 
 # [ Adding new hospital user ]
 @bp.route("/add", methods=['POST' , 'GET'])
+@admin_login_required
 def hos_user():
 
         # Check if the request method is POST and the user is logged in with the correct username
-        if request.method=='POST'  and 'user' in session and session['user']==var.ADMIN_NAME:
+        if request.method=='POST':
             
             # Get the form data
             hcode = request.form.get('hcode')
@@ -101,7 +112,7 @@ def hos_user():
 
             # Add the new hospital user to the database
             try:
-                newuser = Hospitaluser( hcode=hcode, email=email, password=encpassword ) 
+                newuser = Hospitaluser( hcode=hcode, email=email, password=encpassword , role='hospital') 
                 db.session.add(newuser)
                 db.session.commit()
 
@@ -114,62 +125,44 @@ def hos_user():
                 db.rollback()
                 return str(e)
 
-        # Check if the request method is GET and the user is logged in with the correct username
-        if request.method=='GET' and 'user' in session and session['user']==var.ADMIN_NAME:
-            # Return the add hospital template
-            return render_template('services/addHospital.html')
-        
-        # If the user is not logged in, show error message and redirect to the login page
-        flash("Login and try Again","warning")
-        return redirect(url_for('admin.admin_login'))
+        # Check if the request method is GET 
+        return render_template('services/addHospital.html')
 
 
 # [ This route will query and display Hospital users data  ]
 @bp.route('/hospitals')
+@admin_login_required
 def hospital_data():
-    # Check if user is in session and if the user is the ADMIN_NAME
-    if 'user' in session and session['user']==var.ADMIN_NAME:
-        # Execute SQL query to select all data from hospitaldata table
-        query = db.engine.execute('SELECT * FROM hospitaldata')
-        # Render the hospitalData.html template with the results of the query
-        return render_template('services/hospitalData.html' , query=list(query))
-    
-    #  If user is not in session or is not the ADMIN_NAME, flash a warning message and redirect to the admin login page
-    flash("Login and try Again","warning")
-    return redirect(url_for('admin.admin_login'))
+
+    # Execute SQL query to select all data from hospitaldata table
+    query = db.engine.execute('SELECT * FROM hospitaldata')
+    # Render the hospitalData.html template with the results of the query
+    return render_template('services/hospitalData.html' , query=list(query))
 
 
 # [ This route will query and display users booking data  ]
 @bp.route('/userBookings')
+@admin_login_required
 def user_data():
-    # Check if user is in session and if the user is the ADMIN_NAME
-    if 'user' in session and session['user']==var.ADMIN_NAME:
-        # Execute SQL query to select all data from userbookings table
-        query = db.engine.execute('SELECT * FROM userbookings')
-        # Render the userData.html template with the results of the query
-        return render_template('services/userData.html' , query=list(query))
-    # If user is not in session or is not the ADMIN_NAME, flash a warning message and redirect to the admin login page
-    flash("Login and try Again","warning")
-    return redirect(url_for('admin.admin_login'))
+
+    # Execute SQL query to select all data from userbookings table
+    query = db.engine.execute('SELECT * FROM userbookings')
+    # Render the userData.html template with the results of the query
+    return render_template('services/userData.html' , query=list(query))
+
 
 
 # [ Admin Logout Route ]
 @bp.route("/logout")
+@admin_login_required
 def admin_logout():
 
-    # Check if the 'user' key is present in the session and if the value is equal to the value of ADMIN_NAME in the var module
-    if 'user' in session and  session['user']==var.ADMIN_NAME:
-        # Remove the 'user' key from the session
-        session.pop('user')
-        # Display a flash message indicating that the admin has successfully logged out
-        flash("You are logout admin", "primary")
+    # if the 'user' key is present in the session and if the value is equal to the value of ADMIN_NAME in the var module
+    # Remove the 'user' key from the session
+    session.pop('user')
+    # Display a flash message indicating that the admin has successfully logged out
+    flash("You are logout admin", "primary")
 
-        # Redirect the user to the admin login page
-        return redirect(url_for('admin.admin_login'))
-    
-    # If the 'user' key is not present in the session or the value is not equal to the value of ADMIN_NAME in the var module
-    # Display a flash message indicating that the user needs to log in first
-    flash("Login and try Again","warning")
     # Redirect the user to the admin login page
     return redirect(url_for('admin.admin_login'))
 
