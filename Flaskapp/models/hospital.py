@@ -6,7 +6,7 @@ class Hospitaluser(db.Model , UserMixin):
     hcode=db.Column(db.String(20),unique=True)
     email=db.Column(db.String(50),unique=True)
     password=db.Column(db.String(1000))
-    role = db.Column(db.String(80), nullable=False)
+    role = db.Column(db.String(20), default="hospital")
 
 class Hospitaldata(db.Model):
     id=db.Column(db.Integer,primary_key=True)
