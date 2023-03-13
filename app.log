@@ -20586,3 +20586,580 @@ sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1049, "Unknown 
 2023-02-13 19:06:42,904:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
 2023-02-13 19:06:43,080:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
 2023-02-13 19:07:00,634:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-03-10 22:30:36,096:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-10 22:30:36,523:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-10 22:32:03,905:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-10 22:32:03,909:INFO:[33mPress CTRL+C to quit[0m
+2023-03-10 22:32:03,928:INFO: * Restarting with stat
+2023-03-10 22:32:07,178:WARNING: * Debugger is active!
+2023-03-10 22:32:07,244:INFO: * Debugger PIN: 532-249-324
+2023-03-10 22:32:37,216:INFO:127.0.0.1 - - [10/Mar/2023 22:32:37] "GET / HTTP/1.1" 200 -
+2023-03-10 22:32:37,218:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-10 22:32:37,673:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:37,912:INFO:127.0.0.1 - - [10/Mar/2023 22:32:37] "GET /static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 -
+2023-03-10 22:32:37,925:INFO:127.0.0.1 - - [10/Mar/2023 22:32:37] "GET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,103:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:38,139:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/remixicon/remixicon.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,150:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/css/style.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,164:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,222:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,283:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:38,296:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,302:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/animate.css/animate.min.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,479:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:38,512:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,524:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/css/v-style.css HTTP/1.1" 200 -
+2023-03-10 22:32:38,579:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1" 200 -
+2023-03-10 22:32:38,627:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2023-03-10 22:32:38,663:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:38,685:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 -
+2023-03-10 22:32:38,701:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 -
+2023-03-10 22:32:38,849:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:38,985:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "[33mGET /static/assets/img/logo.png HTTP/1.1[0m" 404 -
+2023-03-10 22:32:38,988:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/js/main.js HTTP/1.1" 200 -
+2023-03-10 22:32:38,997:INFO:127.0.0.1 - - [10/Mar/2023 22:32:38] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 200 -
+2023-03-10 22:32:39,022:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:39,073:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/img/departments-1.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:39,132:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/img/departments-2.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:39,142:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/img/departments-3.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:39,200:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:39,392:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:39,416:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/img/departments-5.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:39,575:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/img/departments-4.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:39,590:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:39,629:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2023-03-10 22:32:39,632:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/img/hero-bg.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:39,651:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 -
+2023-03-10 22:32:39,653:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1" 200 -
+2023-03-10 22:32:39,751:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2023-03-10 22:32:39,772:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:39,931:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/img/doctors/doctors-1.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:39,939:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:39,979:INFO:127.0.0.1 - - [10/Mar/2023 22:32:39] "GET /static/assets/img/doctors/doctors-2.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,004:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/doctors/doctors-3.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,058:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/testimonials/testimonials-1.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,068:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/doctors/doctors-4.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,119:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:40,138:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/testimonials/testimonials-2.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,278:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/testimonials/testimonials-3.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,307:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:40,351:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/testimonials/testimonials-4.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,376:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/testimonials/testimonials-5.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,457:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/gallery/gallery-2.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,475:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/gallery/gallery-1.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,494:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:40,517:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/gallery/gallery-3.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,620:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/gallery/gallery-4.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,675:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:40,700:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/gallery/gallery-5.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,723:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/gallery/gallery-6.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,811:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/gallery/gallery-7.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,833:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/gallery/gallery-8.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:40,852:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:40,865:INFO:127.0.0.1 - - [10/Mar/2023 22:32:40] "GET /static/assets/img/about.jpg HTTP/1.1" 200 -
+2023-03-10 22:32:41,015:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:41,192:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:41,252:INFO:127.0.0.1 - - [10/Mar/2023 22:32:41] "GET /static/assets/img/favicon.png HTTP/1.1" 200 -
+2023-03-10 22:32:41,368:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:41,545:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:41,713:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:41,885:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:42,047:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:42,220:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:42,387:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:42,563:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:42,733:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:42,905:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:43,070:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:43,241:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:43,415:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:43,586:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:43,764:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:43,938:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:44,114:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:44,276:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:44,445:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:44,618:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:44,813:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:45,008:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:45,181:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:45,344:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:45,515:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:45,686:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:45,864:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:46,038:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 41
+2023-03-10 22:32:50,525:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/envelope/ HTTP/1.1" 200 2
+2023-03-10 23:43:51,904:DEBUG:starting thread (client mode): 0xe2c38a90
+2023-03-10 23:43:51,905:DEBUG:Local version/idstring: SSH-2.0-paramiko_3.0.0
+2023-03-10 23:43:52,128:DEBUG:Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2023-03-10 23:43:52,128:INFO:Connected (version 2.0, client OpenSSH_8.2p1)
+2023-03-10 23:43:52,352:DEBUG:=== Key exchange possibilities ===
+2023-03-10 23:43:52,352:DEBUG:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-03-10 23:43:52,352:DEBUG:server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa
+2023-03-10 23:43:52,352:DEBUG:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-10 23:43:52,353:DEBUG:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-10 23:43:52,353:DEBUG:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-10 23:43:52,353:DEBUG:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-10 23:43:52,353:DEBUG:client compress: none, zlib@openssh.com
+2023-03-10 23:43:52,353:DEBUG:server compress: none, zlib@openssh.com
+2023-03-10 23:43:52,353:DEBUG:client lang: <none>
+2023-03-10 23:43:52,354:DEBUG:server lang: <none>
+2023-03-10 23:43:52,354:DEBUG:kex follows: False
+2023-03-10 23:43:52,354:DEBUG:=== Key exchange agreements ===
+2023-03-10 23:43:52,354:DEBUG:Kex: curve25519-sha256@libssh.org
+2023-03-10 23:43:52,354:DEBUG:HostKey: rsa-sha2-512
+2023-03-10 23:43:52,354:DEBUG:Cipher: aes128-ctr
+2023-03-10 23:43:52,354:DEBUG:MAC: hmac-sha2-256
+2023-03-10 23:43:52,354:DEBUG:Compression: none
+2023-03-10 23:43:52,354:DEBUG:=== End of kex handshake ===
+2023-03-10 23:43:52,607:DEBUG:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-03-10 23:43:52,610:DEBUG:Switch to new keys ...
+2023-03-10 23:43:52,610:DEBUG:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2023-03-10 23:43:52,610:DEBUG:Attempting password auth...
+2023-03-10 23:43:53,095:DEBUG:userauth is OK
+2023-03-10 23:43:53,345:INFO:Auth banner: b'<<<<<<:>~ PythonAnywhere SSH. Help @ https://help.pythonanywhere.com/pages/SSHAccess\n'
+2023-03-10 23:43:53,345:INFO:Authentication (password) successful!
+2023-03-10 23:43:55,108:DEBUG:Received global request "hostkeys-00@openssh.com"
+2023-03-10 23:43:55,108:DEBUG:Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-03-10 23:43:58,184:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:03,290:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:08,380:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:13,468:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:18,546:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:23,553:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:24,589:DEBUG:[chan 0] Max packet in: 32768 bytes
+2023-03-10 23:44:24,810:ERROR:Secsh channel 0 open FAILED: open failed: Administratively prohibited
+2023-03-10 23:44:25,079:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-10 23:44:25,078:ERROR:Could not establish connection from local ('127.0.0.1', 54707) to remote ('vivekbhawsar.mysql.pythonanywhere-services.com', 3306) side of the tunnel: open new channel ssh error: ChannelException(1, 'Administratively prohibited')
+2023-03-10 23:44:25,523:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-10 23:44:25,700:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-10 23:44:29,601:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:34,689:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:39,758:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:44,835:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:49,892:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:44:54,980:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:00,041:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:05,119:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:10,193:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:15,269:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:20,345:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:25,429:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:30,518:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:35,597:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:40,674:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:45,754:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:50,838:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:45:55,912:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:01,000:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:06,079:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:11,141:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:16,225:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:21,315:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:26,398:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:31,500:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:36,577:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:41,663:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:46,739:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:51,819:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:46:56,902:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:01,994:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:07,051:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:12,136:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:17,212:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:22,276:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:27,349:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:32,433:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:37,516:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:42,594:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:47,668:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:52,751:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:47:57,820:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:02,908:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:07,984:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:13,065:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:18,150:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:23,221:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:28,306:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:33,388:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:38,463:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:43,558:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:48,648:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:53,738:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:48:58,819:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:03,865:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:08,897:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:13,954:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:19,019:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:24,053:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:29,107:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:34,150:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:39,182:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:44,230:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:49,302:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:54,363:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:49:59,419:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:04,501:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:09,549:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:14,606:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:19,700:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:24,764:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:29,859:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:34,948:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:40,035:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:45,124:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:50,201:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:50:55,276:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:00,338:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:05,383:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:10,447:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:15,514:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:20,554:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:25,592:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:30,674:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:35,768:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:40,865:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:45,945:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:51,016:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:51:56,109:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:01,186:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:06,263:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:11,350:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:16,456:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:21,527:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:26,616:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:31,705:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:36,786:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:41,876:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:46,963:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:52,043:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:52:57,137:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:08,649:DEBUG:starting thread (client mode): 0xcc718a90
+2023-03-10 23:53:08,650:DEBUG:Local version/idstring: SSH-2.0-paramiko_3.0.0
+2023-03-10 23:53:08,862:DEBUG:Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2023-03-10 23:53:08,863:INFO:Connected (version 2.0, client OpenSSH_8.2p1)
+2023-03-10 23:53:09,223:DEBUG:=== Key exchange possibilities ===
+2023-03-10 23:53:09,224:DEBUG:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-03-10 23:53:09,224:DEBUG:server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa
+2023-03-10 23:53:09,224:DEBUG:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-10 23:53:09,224:DEBUG:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-10 23:53:09,224:DEBUG:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-10 23:53:09,225:DEBUG:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-10 23:53:09,225:DEBUG:client compress: none, zlib@openssh.com
+2023-03-10 23:53:09,225:DEBUG:server compress: none, zlib@openssh.com
+2023-03-10 23:53:09,225:DEBUG:client lang: <none>
+2023-03-10 23:53:09,225:DEBUG:server lang: <none>
+2023-03-10 23:53:09,226:DEBUG:kex follows: False
+2023-03-10 23:53:09,226:DEBUG:=== Key exchange agreements ===
+2023-03-10 23:53:09,226:DEBUG:Kex: curve25519-sha256@libssh.org
+2023-03-10 23:53:09,226:DEBUG:HostKey: rsa-sha2-512
+2023-03-10 23:53:09,226:DEBUG:Cipher: aes128-ctr
+2023-03-10 23:53:09,226:DEBUG:MAC: hmac-sha2-256
+2023-03-10 23:53:09,227:DEBUG:Compression: none
+2023-03-10 23:53:09,227:DEBUG:=== End of kex handshake ===
+2023-03-10 23:53:09,651:DEBUG:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-03-10 23:53:09,653:DEBUG:Switch to new keys ...
+2023-03-10 23:53:09,653:DEBUG:Attempting password auth...
+2023-03-10 23:53:09,654:DEBUG:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2023-03-10 23:53:10,290:DEBUG:userauth is OK
+2023-03-10 23:53:10,644:INFO:Auth banner: b'<<<<<<:>~ PythonAnywhere SSH. Help @ https://help.pythonanywhere.com/pages/SSHAccess\n'
+2023-03-10 23:53:10,644:INFO:Authentication (password) successful!
+2023-03-10 23:53:12,093:DEBUG:Received global request "hostkeys-00@openssh.com"
+2023-03-10 23:53:12,093:DEBUG:Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-03-10 23:53:15,308:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:20,409:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:25,487:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:30,585:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:31,556:DEBUG:[chan 0] Max packet in: 32768 bytes
+2023-03-10 23:53:31,957:ERROR:Secsh channel 0 open FAILED: open failed: Administratively prohibited
+2023-03-10 23:53:32,346:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-10 23:53:32,344:ERROR:Could not establish connection from local ('127.0.0.1', 54903) to remote ('vivekbhawsar.mysql.pythonanywhere-services.com', 3333) side of the tunnel: open new channel ssh error: ChannelException(1, 'Administratively prohibited')
+2023-03-10 23:53:32,845:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-10 23:53:33,024:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-10 23:53:36,635:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:41,720:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:46,817:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:51,847:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:53:56,933:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:01,982:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:07,036:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:12,126:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:17,200:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:22,288:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:27,365:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:32,465:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:37,543:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:42,626:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:47,709:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:52,768:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:54:57,852:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:02,855:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:07,930:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:13,016:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:18,108:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:23,171:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:28,250:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:33,335:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:38,363:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:43,397:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:48,430:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:53,487:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:55:58,542:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:03,632:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:08,697:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:13,772:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:18,847:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:23,920:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:29,011:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:34,113:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:39,198:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:44,274:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:49,363:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:54,447:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:56:59,538:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:04,585:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:09,661:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:14,740:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:19,823:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:24,885:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:29,972:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:35,059:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:40,134:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:45,215:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:50,300:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:57:55,364:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:00,446:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:05,527:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:10,600:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:15,680:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:20,759:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:25,824:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:30,826:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:35,898:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:40,984:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:46,070:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:51,148:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:58:56,219:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:59:01,316:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:59:06,353:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:59:11,399:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:59:16,462:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-10 23:59:21,515:DEBUG:Sending global request "keepalive@lag.net"
+2023-03-11 00:05:02,974:DEBUG:starting thread (client mode): 0x7a6e50d0
+2023-03-11 00:05:02,975:DEBUG:Local version/idstring: SSH-2.0-paramiko_3.0.0
+2023-03-11 00:05:03,214:DEBUG:Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2023-03-11 00:05:03,214:INFO:Connected (version 2.0, client OpenSSH_8.2p1)
+2023-03-11 00:05:03,584:DEBUG:=== Key exchange possibilities ===
+2023-03-11 00:05:03,584:DEBUG:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-03-11 00:05:03,584:DEBUG:server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa
+2023-03-11 00:05:03,586:DEBUG:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:05:03,586:DEBUG:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:05:03,586:DEBUG:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:05:03,586:DEBUG:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:05:03,587:DEBUG:client compress: none, zlib@openssh.com
+2023-03-11 00:05:03,587:DEBUG:server compress: none, zlib@openssh.com
+2023-03-11 00:05:03,587:DEBUG:client lang: <none>
+2023-03-11 00:05:03,587:DEBUG:server lang: <none>
+2023-03-11 00:05:03,588:DEBUG:kex follows: False
+2023-03-11 00:05:03,588:DEBUG:=== Key exchange agreements ===
+2023-03-11 00:05:03,588:DEBUG:Kex: curve25519-sha256@libssh.org
+2023-03-11 00:05:03,588:DEBUG:HostKey: rsa-sha2-512
+2023-03-11 00:05:03,589:DEBUG:Cipher: aes128-ctr
+2023-03-11 00:05:03,589:DEBUG:MAC: hmac-sha2-256
+2023-03-11 00:05:03,589:DEBUG:Compression: none
+2023-03-11 00:05:03,590:DEBUG:=== End of kex handshake ===
+2023-03-11 00:05:04,004:DEBUG:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-03-11 00:05:04,005:DEBUG:Switch to new keys ...
+2023-03-11 00:05:04,007:DEBUG:Attempting password auth...
+2023-03-11 00:05:04,009:DEBUG:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2023-03-11 00:05:04,610:DEBUG:userauth is OK
+2023-03-11 00:05:05,037:INFO:Auth banner: b'<<<<<<:>~ PythonAnywhere SSH. Help @ https://help.pythonanywhere.com/pages/SSHAccess\n'
+2023-03-11 00:05:05,037:INFO:Authentication (password) successful!
+2023-03-11 00:05:05,050:DEBUG:[chan 0] Max packet in: 32768 bytes
+2023-03-11 00:05:07,888:DEBUG:Received global request "hostkeys-00@openssh.com"
+2023-03-11 00:05:07,888:DEBUG:Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-03-11 00:05:08,294:ERROR:Secsh channel 0 open FAILED: open failed: Administratively prohibited
+2023-03-11 00:05:08,626:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-11 00:05:08,624:ERROR:Could not establish connection from local ('127.0.0.1', 55137) to remote ('vivekbhawsar.mysql.pythonanywhere-services.com', 3306) side of the tunnel: open new channel ssh error: ChannelException(1, 'Administratively prohibited')
+2023-03-11 00:05:08,631:DEBUG:EOF in transport thread
+2023-03-11 00:05:09,014:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:05:09,190:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:05:09,363:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:08:42,727:DEBUG:starting thread (client mode): 0x18b270d0
+2023-03-11 00:08:42,728:DEBUG:Local version/idstring: SSH-2.0-paramiko_3.0.0
+2023-03-11 00:08:43,133:DEBUG:Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2023-03-11 00:08:43,134:INFO:Connected (version 2.0, client OpenSSH_8.2p1)
+2023-03-11 00:08:43,544:DEBUG:=== Key exchange possibilities ===
+2023-03-11 00:08:43,545:DEBUG:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-03-11 00:08:43,545:DEBUG:server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa
+2023-03-11 00:08:43,545:DEBUG:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:08:43,545:DEBUG:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:08:43,545:DEBUG:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:08:43,546:DEBUG:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:08:43,546:DEBUG:client compress: none, zlib@openssh.com
+2023-03-11 00:08:43,546:DEBUG:server compress: none, zlib@openssh.com
+2023-03-11 00:08:43,546:DEBUG:client lang: <none>
+2023-03-11 00:08:43,546:DEBUG:server lang: <none>
+2023-03-11 00:08:43,547:DEBUG:kex follows: False
+2023-03-11 00:08:43,547:DEBUG:=== Key exchange agreements ===
+2023-03-11 00:08:43,547:DEBUG:Kex: curve25519-sha256@libssh.org
+2023-03-11 00:08:43,547:DEBUG:HostKey: rsa-sha2-512
+2023-03-11 00:08:43,547:DEBUG:Cipher: aes128-ctr
+2023-03-11 00:08:43,548:DEBUG:MAC: hmac-sha2-256
+2023-03-11 00:08:43,548:DEBUG:Compression: none
+2023-03-11 00:08:43,548:DEBUG:=== End of kex handshake ===
+2023-03-11 00:08:43,963:DEBUG:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-03-11 00:08:43,966:DEBUG:Switch to new keys ...
+2023-03-11 00:08:43,967:DEBUG:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2023-03-11 00:08:43,967:DEBUG:Attempting password auth...
+2023-03-11 00:08:44,773:DEBUG:userauth is OK
+2023-03-11 00:08:45,026:INFO:Auth banner: b'<<<<<<:>~ PythonAnywhere SSH. Help @ https://help.pythonanywhere.com/pages/SSHAccess\n'
+2023-03-11 00:08:45,027:INFO:Authentication (password) successful!
+2023-03-11 00:08:45,035:DEBUG:[chan 0] Max packet in: 32768 bytes
+2023-03-11 00:08:46,414:DEBUG:Received global request "hostkeys-00@openssh.com"
+2023-03-11 00:08:46,414:DEBUG:Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-03-11 00:08:46,827:ERROR:Secsh channel 0 open FAILED: open failed: Administratively prohibited
+2023-03-11 00:08:47,125:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-11 00:08:47,123:ERROR:Could not establish connection from local ('127.0.0.1', 55159) to remote ('vivekbhawsar.mysql.pythonanywhere-services.com', 3306) side of the tunnel: open new channel ssh error: ChannelException(1, 'Administratively prohibited')
+2023-03-11 00:08:47,130:DEBUG:EOF in transport thread
+2023-03-11 00:08:47,510:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:08:47,681:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:08:47,866:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:22:30,753:DEBUG:starting thread (client mode): 0xa0f660d0
+2023-03-11 00:22:30,756:DEBUG:Local version/idstring: SSH-2.0-paramiko_3.0.0
+2023-03-11 00:22:31,192:DEBUG:Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2023-03-11 00:22:31,193:INFO:Connected (version 2.0, client OpenSSH_8.2p1)
+2023-03-11 00:22:31,567:DEBUG:=== Key exchange possibilities ===
+2023-03-11 00:22:31,567:DEBUG:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-03-11 00:22:31,567:DEBUG:server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa
+2023-03-11 00:22:31,567:DEBUG:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:22:31,568:DEBUG:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:22:31,568:DEBUG:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:22:31,568:DEBUG:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:22:31,568:DEBUG:client compress: none, zlib@openssh.com
+2023-03-11 00:22:31,568:DEBUG:server compress: none, zlib@openssh.com
+2023-03-11 00:22:31,569:DEBUG:client lang: <none>
+2023-03-11 00:22:31,569:DEBUG:server lang: <none>
+2023-03-11 00:22:31,569:DEBUG:kex follows: False
+2023-03-11 00:22:31,569:DEBUG:=== Key exchange agreements ===
+2023-03-11 00:22:31,569:DEBUG:Kex: curve25519-sha256@libssh.org
+2023-03-11 00:22:31,570:DEBUG:HostKey: rsa-sha2-512
+2023-03-11 00:22:31,570:DEBUG:Cipher: aes128-ctr
+2023-03-11 00:22:31,570:DEBUG:MAC: hmac-sha2-256
+2023-03-11 00:22:31,570:DEBUG:Compression: none
+2023-03-11 00:22:31,571:DEBUG:=== End of kex handshake ===
+2023-03-11 00:22:31,996:DEBUG:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-03-11 00:22:31,998:DEBUG:Switch to new keys ...
+2023-03-11 00:22:31,999:DEBUG:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2023-03-11 00:22:32,000:DEBUG:Attempting password auth...
+2023-03-11 00:22:32,825:DEBUG:userauth is OK
+2023-03-11 00:22:33,235:INFO:Auth banner: b'<<<<<<:>~ PythonAnywhere SSH. Help @ https://help.pythonanywhere.com/pages/SSHAccess\n'
+2023-03-11 00:22:33,235:INFO:Authentication (password) successful!
+2023-03-11 00:22:33,245:DEBUG:[chan 0] Max packet in: 32768 bytes
+2023-03-11 00:22:34,650:DEBUG:Received global request "hostkeys-00@openssh.com"
+2023-03-11 00:22:34,651:DEBUG:Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-03-11 00:22:34,914:ERROR:Secsh channel 0 open FAILED: open failed: Administratively prohibited
+2023-03-11 00:22:35,279:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-11 00:22:35,277:ERROR:Could not establish connection from local ('127.0.0.1', 55326) to remote ('vivekbhawsar.mysql.pythonanywhere-services.com', 3306) side of the tunnel: open new channel ssh error: ChannelException(1, 'Administratively prohibited')
+2023-03-11 00:22:35,285:DEBUG:EOF in transport thread
+2023-03-11 00:22:35,676:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:22:35,850:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:22:36,024:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-11 00:27:50,656:DEBUG:starting thread (client mode): 0xdbf68af0
+2023-03-11 00:27:50,659:DEBUG:Local version/idstring: SSH-2.0-paramiko_3.0.0
+2023-03-11 00:27:50,899:DEBUG:Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2023-03-11 00:27:50,900:INFO:Connected (version 2.0, client OpenSSH_8.2p1)
+2023-03-11 00:27:51,143:DEBUG:=== Key exchange possibilities ===
+2023-03-11 00:27:51,143:DEBUG:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-03-11 00:27:51,144:DEBUG:server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa
+2023-03-11 00:27:51,144:DEBUG:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:27:51,144:DEBUG:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:27:51,144:DEBUG:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:27:51,144:DEBUG:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:27:51,145:DEBUG:client compress: none, zlib@openssh.com
+2023-03-11 00:27:51,145:DEBUG:server compress: none, zlib@openssh.com
+2023-03-11 00:27:51,145:DEBUG:client lang: <none>
+2023-03-11 00:27:51,145:DEBUG:server lang: <none>
+2023-03-11 00:27:51,145:DEBUG:kex follows: False
+2023-03-11 00:27:51,146:DEBUG:=== Key exchange agreements ===
+2023-03-11 00:27:51,146:DEBUG:Kex: curve25519-sha256@libssh.org
+2023-03-11 00:27:51,146:DEBUG:HostKey: rsa-sha2-512
+2023-03-11 00:27:51,146:DEBUG:Cipher: aes128-ctr
+2023-03-11 00:27:51,147:DEBUG:MAC: hmac-sha2-256
+2023-03-11 00:27:51,147:DEBUG:Compression: none
+2023-03-11 00:27:51,147:DEBUG:=== End of kex handshake ===
+2023-03-11 00:27:51,419:DEBUG:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-03-11 00:27:51,421:DEBUG:Switch to new keys ...
+2023-03-11 00:27:51,422:DEBUG:Attempting password auth...
+2023-03-11 00:27:51,424:DEBUG:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2023-03-11 00:27:51,942:DEBUG:userauth is OK
+2023-03-11 00:27:52,292:INFO:Auth banner: b'<<<<<<:>~ PythonAnywhere SSH. Help @ https://help.pythonanywhere.com/pages/SSHAccess\n'
+2023-03-11 00:27:52,293:INFO:Authentication (password) successful!
+2023-03-11 00:27:52,484:DEBUG:EOF in transport thread
+2023-03-11 00:32:59,706:DEBUG:starting thread (client mode): 0xb7339af0
+2023-03-11 00:32:59,707:DEBUG:Local version/idstring: SSH-2.0-paramiko_3.0.0
+2023-03-11 00:32:59,932:DEBUG:Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2023-03-11 00:32:59,932:INFO:Connected (version 2.0, client OpenSSH_8.2p1)
+2023-03-11 00:33:00,157:DEBUG:=== Key exchange possibilities ===
+2023-03-11 00:33:00,157:DEBUG:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-03-11 00:33:00,158:DEBUG:server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa
+2023-03-11 00:33:00,158:DEBUG:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:33:00,158:DEBUG:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-11 00:33:00,158:DEBUG:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:33:00,159:DEBUG:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-11 00:33:00,159:DEBUG:client compress: none, zlib@openssh.com
+2023-03-11 00:33:00,159:DEBUG:server compress: none, zlib@openssh.com
+2023-03-11 00:33:00,159:DEBUG:client lang: <none>
+2023-03-11 00:33:00,159:DEBUG:server lang: <none>
+2023-03-11 00:33:00,159:DEBUG:kex follows: False
+2023-03-11 00:33:00,159:DEBUG:=== Key exchange agreements ===
+2023-03-11 00:33:00,160:DEBUG:Kex: curve25519-sha256@libssh.org
+2023-03-11 00:33:00,160:DEBUG:HostKey: rsa-sha2-512
+2023-03-11 00:33:00,160:DEBUG:Cipher: aes128-ctr
+2023-03-11 00:33:00,160:DEBUG:MAC: hmac-sha2-256
+2023-03-11 00:33:00,161:DEBUG:Compression: none
+2023-03-11 00:33:00,161:DEBUG:=== End of kex handshake ===
+2023-03-11 00:33:00,414:DEBUG:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-03-11 00:33:00,415:DEBUG:Switch to new keys ...
+2023-03-11 00:33:00,416:DEBUG:Attempting password auth...
+2023-03-11 00:33:00,417:DEBUG:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2023-03-11 00:33:00,910:DEBUG:userauth is OK
+2023-03-11 00:33:01,162:INFO:Auth banner: b'<<<<<<:>~ PythonAnywhere SSH. Help @ https://help.pythonanywhere.com/pages/SSHAccess\n'
+2023-03-11 00:33:01,164:INFO:Authentication (password) successful!
+2023-03-11 00:33:01,375:DEBUG:EOF in transport thread
+2023-03-12 22:54:43,624:DEBUG:starting thread (client mode): 0x71408b20
+2023-03-12 22:54:43,626:DEBUG:Local version/idstring: SSH-2.0-paramiko_3.0.0
+2023-03-12 22:54:43,841:DEBUG:Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2023-03-12 22:54:43,841:INFO:Connected (version 2.0, client OpenSSH_8.2p1)
+2023-03-12 22:54:44,057:DEBUG:=== Key exchange possibilities ===
+2023-03-12 22:54:44,058:DEBUG:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-03-12 22:54:44,058:DEBUG:server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa
+2023-03-12 22:54:44,058:DEBUG:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-12 22:54:44,058:DEBUG:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-03-12 22:54:44,058:DEBUG:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-12 22:54:44,059:DEBUG:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-03-12 22:54:44,059:DEBUG:client compress: none, zlib@openssh.com
+2023-03-12 22:54:44,059:DEBUG:server compress: none, zlib@openssh.com
+2023-03-12 22:54:44,059:DEBUG:client lang: <none>
+2023-03-12 22:54:44,059:DEBUG:server lang: <none>
+2023-03-12 22:54:44,059:DEBUG:kex follows: False
+2023-03-12 22:54:44,059:DEBUG:=== Key exchange agreements ===
+2023-03-12 22:54:44,060:DEBUG:Kex: curve25519-sha256@libssh.org
+2023-03-12 22:54:44,060:DEBUG:HostKey: rsa-sha2-512
+2023-03-12 22:54:44,062:DEBUG:Cipher: aes128-ctr
+2023-03-12 22:54:44,062:DEBUG:MAC: hmac-sha2-256
+2023-03-12 22:54:44,063:DEBUG:Compression: none
+2023-03-12 22:54:44,063:DEBUG:=== End of kex handshake ===
+2023-03-12 22:54:44,293:DEBUG:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-03-12 22:54:44,294:DEBUG:Switch to new keys ...
+2023-03-12 22:54:44,295:DEBUG:Attempting password auth...
+2023-03-12 22:54:44,296:DEBUG:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2023-03-12 22:54:44,764:DEBUG:userauth is OK
+2023-03-12 22:54:45,007:INFO:Auth banner: b'<<<<<<:>~ PythonAnywhere SSH. Help @ https://help.pythonanywhere.com/pages/SSHAccess\n'
+2023-03-12 22:54:45,008:INFO:Authentication (password) successful!
+2023-03-12 22:54:45,150:DEBUG:EOF in transport thread
+2023-03-12 22:59:13,832:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-12 22:59:14,348:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41
+2023-03-12 22:59:45,272:DEBUG:Starting new HTTPS connection (1): o4504660581482496.ingest.sentry.io:443
+2023-03-12 22:59:45,678:DEBUG:https://o4504660581482496.ingest.sentry.io:443 "POST /api/4504660582924288/store/ HTTP/1.1" 200 41

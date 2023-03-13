@@ -43,7 +43,9 @@ app.config.from_object(Config)
 app.config.from_object(MailConfig)
 app.config['SESSION_TYPE'] = 'filesystem'
 
-# Initializing extensions for the Flask application
+
+
+# Initializing extensions for the Flask applicatio
 
 # The database extension is initialized
 db.init_app(app)

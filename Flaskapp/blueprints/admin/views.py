@@ -6,7 +6,6 @@ from config import AdminCred
 from flask_mail import Message
 from werkzeug.security import generate_password_hash
 from functools import wraps
-from flask_login import current_user, login_required
 from Flaskapp import  logger
 
 # Creating a blueprint object 'bp' to store the user related functionality
